@@ -1,0 +1,657 @@
+/* blog.scss */
+
+@import "main.scss";
+
+$darkgraytext: #5f5f5f;
+
+@mixin heading() {
+  margin-top: 1em;
+  font-size: 2.5em;
+  width: calc(100% - 1em);
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  text-align: center;
+  letter-spacing: 6px;
+  line-height: 1.5em;
+}
+
+a#blog-about-link {
+  float: right;
+  position: absolute;
+  right: 2em;
+  top: 0.6em;
+  &:hover {
+    color: $graytext;
+  }
+}
+
+h1#blog-header {
+  @extend #site-header;
+  font-size: 1.2em;
+  border-bottom: black 1px solid;
+  padding-bottom: 0.4em;
+  &:hover {
+    cursor: default;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+#home-page-top-space {
+  margin-top: 4em;
+}
+
+h1#blog-title {
+  @include heading();
+  font-size: 2.7em;
+  margin-bottom: 0.5em;
+}
+
+#filters-container {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  @include noselect();
+  .filter {
+    font-size: 1.2em;
+    margin: 0em 1.5em;
+    &:hover {
+      cursor: pointer;
+    }
+    .i-container {
+      text-align: left;
+      i {
+        display: inline-block;
+        width: 0.9em;
+      }
+    }
+    .tag-name {
+      &:hover,
+      &.selected {
+        text-decoration: underline;
+      }
+      &:hover {
+        color: $graytext;
+      }
+    }
+  }
+}
+
+#toc-container {
+  padding: 1em;
+  text-align: center;
+  ol#blog-toc {
+    width: 37em;
+    display: inline-block;
+    text-align: center;
+    li.entry-line {
+      text-align: left;
+      line-height: 1.5em;
+      margin-bottom: 0.5em;
+      a.entry-link {
+        font-size: 1em;
+        display: block;
+        line-height: 1.5em;
+      }
+      a.entry-link:hover {
+        cursor: pointer;
+        color: $graytext;
+      }
+    }
+  }
+}
+
+#bottom-padding {
+  padding-bottom: 4em;
+}
+
+/* entry page */
+
+h1.entry-title {
+  @include heading();
+}
+
+h2.entry-subtitle {
+  @include heading();
+  font-size: 1em;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 1.8em;
+}
+
+h3.entry-date {
+  font-size: 1em;
+  text-align: center;
+  color: $graytext;
+  margin: 0.75em;
+  margin-bottom: 1.5em;  
+}
+
+h2.sub-heading {
+  @include heading();
+  font-size: 2em;
+  letter-spacing: 4px;
+}
+
+.quote-looking {
+  color: $darkgraytext;
+  font-style: italic;
+  &.close-in {
+    margin: 0.5em 0 0.25em 0;
+  }
+}
+
+.coding-font {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.poetry-container {
+  display: inline-block;
+  padding: 2em 1em;
+  max-width: 500px;
+  &.no-padding {
+    padding: 0em 1em;
+  }
+  &.coding-poetry {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 0em 20%;
+  }
+  pre {
+    text-align: left;
+    line-height: 1.25em;
+  }
+  .small_font,
+  .small-font {
+    font-size: 0.8em;
+  }
+  p {
+    text-align: left;
+    font-size: 0.8em;
+    padding: 0.8em 0em;
+    &.note {
+      font-size: 0.7em;
+      color: $graytext;
+    }
+  }
+  a {
+    font-size: 1em;
+    text-decoration: underline;
+    &:hover {
+      color: $graytext;
+    }
+  }
+}
+
+.prose-container {
+  display: inline-block;
+  padding: 0.5em 1em;
+  max-width: 500px;
+  line-height: 1.5em;
+  text-align: left;
+  p {
+    margin: 0.5em 0;
+    &.big-quote-text {
+      padding: 0 0.5em;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  }
+  hr {
+    width: 77%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  a {
+    font-size: 1em;
+    text-decoration: underline;
+    &:hover {
+      color: $graytext;
+    }
+  }
+  i {
+    font-style: italic;
+  }
+  b {
+    font-weight: bold;
+  }
+  .underline,
+  und {
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    padding: 1em 2em;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    padding: 0.25em 0.5em;
+    text-align: center;
+  }
+  ul {
+    margin: 0.5em 0;
+    list-style-type: square;
+    padding-left: 2em;
+  }
+  ol {
+    margin: 0.5em 0;
+    list-style-type: decimal;
+    padding-left: 2em;
+  }
+  pre {
+    margin: 0.5em 0;
+    line-height: 1.5em;
+  }
+  .left-indent {
+    padding-left: 2em;
+  }
+  .big-left-indent {
+    padding-left: 4em;
+  }
+  .quote-text {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 0.9em;
+  }
+  .lyric-text {
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .small_font,
+  .small-font {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    &.close-in {
+      margin: 0 0 0.75em 0;
+      &.quote-text {
+        padding-left: 2.25em;
+      }
+    }
+  }
+  .spaced-list li {
+    margin-bottom: 0.5em;
+  }
+}
+
+.pagewidth-img-container img {
+  max-width: 95%;
+  max-height: 95vh;
+  margin: 2.5vh 0vh;
+}
+
+/* page turn */
+
+.page-turn {
+  text-align: center;
+  margin-bottom: 1em;
+  .next-prev-page {
+    text-decoration: underline;
+    color: $graytext;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* entry footer */
+
+hr {
+  width: 77%;
+  margin-bottom: 2em;
+}
+
+#blog-post-credits {
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+#entry-footer {
+  margin-bottom: 3em;
+  #prev-blog-container {
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    .nav-info {
+      text-align: left;
+    }
+  }
+  #next-blog-container {
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    .nav-info {
+      text-align: right;
+    }
+  }
+  #toc-btn-container {
+    width: 25%;
+    display: inline-block;
+    vertical-align: baseline;
+    color: black;
+    @include transition(color, 0.2s, ease-in-out);
+    &:hover {
+      cursor: pointer;
+      .fa {
+        color: lighten($graytext, 10%);
+        @include transition(color, 0.2s, ease-in-out);
+      }
+      span {
+        color: $graytext;
+        @include transition(color, 0.2s, ease-in-out);
+      }
+    }
+    span {
+      padding: 0em 0.5em;
+    }
+  }
+  text-align: center;
+  .nav-entry {
+    display: inline-block;
+    line-height: 1.2em;
+    @include transition(color, 0.2s, ease-in-out);
+    &:hover {
+      color: $graytext;
+      @include transition(color, 0.2s, ease-in-out);
+    }
+    @extend .hvr-float;
+    .arrow-container {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+    .nav-desc {
+      color: $graytext;
+      font-size: 0.8em;
+    }
+    .nav-info {
+      width: calc(100% - 50px);
+      min-width: 150px;
+      display: inline-block;
+      padding: 0em 0.5em;
+    }
+  }
+}
+
+/* IMAGES */
+
+p.caption {
+  font-size: 0.8em;
+  color: $graytext;
+}
+
+.img-container {
+  text-align: center;
+  width: 100%;
+  padding: 1em 0em 0.5em 0em;
+  img {
+    max-width: 100%;
+    max-height: 400px;
+  }
+  p {
+    font-size: 0.8em;
+    color: $graytext;
+  }
+}
+
+/* SUBSCRIBE FORM */ 
+
+#mc_embed_signup-home-page {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+#mc_embed_signup_scroll {
+  margin-top: 1em;
+  h2, div {
+    display: inline-block;
+  }
+  h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  input#mce-EMAIL {
+    font-size: 0.8em;
+    text-align: left;
+    width: 9em;
+  }
+  input#mc-embedded-subscribe.button {
+    font-size: 0.8em;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border: 1px outset;
+    &:hover {
+      background-color: white;
+      cursor: pointer;
+    }
+    &:active {
+      border: 1px inset;
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+/* FOR DESKTOP ONLY */
+
+@media only screen and (min-width: 480px), 
+  only screen and (min-device-width: 480px) {
+
+  a#blog-main-site-link {
+    float: left;
+    position: absolute;
+    left: 2em;
+    top: 0.6em;
+    &:hover {
+      color: $graytext;
+    }
+  }
+
+  #mobile-blog-main-site-link {
+    display: none;
+  }
+
+  #mobile-blog-about-link {
+    display: none;
+  }
+
+  // dot leaders in table of contents
+  // from http://codepen.io/caseymhunt/pen/xEhcp/
+  ol.leaders {
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    
+    li a:before {
+      float: left;
+      width: 0;
+      white-space: nowrap;
+      content: ". . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . . ."
+      " . . . . . . . . . . . . . . ";
+    }
+    
+    span:first-child {
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding-right: 0.33em;
+      background: white;
+    }
+    
+    span + span {
+      float: right;
+      padding-left: 0.33em;
+      background: white;
+    }
+  }
+
+
+}
+
+/* FOR PHONES */
+
+@media only screen and (max-width: 480px), 
+  only screen and (max-device-width: 480px) {
+
+  body {
+    font-size: 24px;
+  }
+
+
+  h1#blog-header {
+    font-size: 1.5em;
+  }
+  #top-bar > #blog-header {
+    font-size: 0.55em;
+  }
+
+  a#blog-main-site-link {
+    display:none;
+  }
+
+  #mobile-blog-main-site-link {
+    text-align: center;
+    font-size: 0.4em;
+  }
+
+  a#blog-about-link {
+    display: none;
+  }
+
+  #mobile-blog-about-link {
+    text-align: center;
+    font-size: 0.4em;
+    padding-right: 1.5em;
+    padding-bottom: 0.25em;
+  }
+
+  #home-page-top-space {
+    margin-top: 0em;
+  }
+
+  h1#blog-title {
+    font-size: 1em;
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+  }
+
+  #filters-container {
+    margin-top: 0.6em;
+    margin-bottom: 0em;
+    .filter {
+      font-size: 0.6em;
+      margin: 0em 1.0em;
+    }
+  }
+
+
+  #mc_embed_signup-home-page {
+    margin-top: 1em;
+    font-size: 0.42em;
+  }
+
+  h2#mc_embed_signup_prompt {
+    display: block;
+  }
+
+
+  h1.entry-title {
+    font-size: 3em;
+  }
+  h2.entry-subtitle {
+    font-size: 1.5em;
+  }
+  h3.entry-date {
+    font-size: 1.5em;
+  }
+
+
+  #toc-container ol#blog-toc {
+    width: 70%;
+    font-size: 0.5em;
+    li.entry-line {
+      margin-bottom: 1em;
+    }
+    .toc-entry-title {
+      display: block;
+    }
+    .toc-entry-date {
+      display: block;
+      color: $graytext;
+      font-size: 0.8em;
+    }
+  }
+
+
+  .prose-container,
+  .poetry-container {
+    max-width: 80%;
+  }
+
+  .prose-container {
+    h1 {
+      font-size: 2em;
+      line-height: 1.2em;
+    }
+    h2 {
+      font-size: 1.5em;
+      line-height: 1.2em;
+    }
+    h3 {
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+    pre {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+    p {
+      line-height: 1.5em;
+    }
+    p.caption {
+      font-size: 1em;
+    }
+  }
+
+  #blog-post-credits {
+    font-size: 0.5em;
+  }
+
+  #entry-footer {
+    .nav-info {
+      line-height: 1.2em;
+    }
+  }
+
+  ul, ol {
+    line-height: 2.5em;
+  }
+
+}
+
+// CUSTOM PER POST
+
+.catholic {
+  h2 {
+    padding: 2em 1.5em 1em 1.5em;
+  }
+  h3 {
+    padding: 1.5em 1.5em 0.8em 1.5em;
+  }
+}
+

@@ -1,0 +1,311 @@
+// Erik Pintar, September 2015
+
+@import 'utils';
+
+$background: white;
+$sidebarMargin: 150px;
+$graytext: #777;
+
+body {
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+h1 {
+	&#site-title {
+		font-size: 3.75em;
+		margin-top: 25vh;
+		letter-spacing: 12px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+h2.circ-btn-label {
+	font-size: 1.5em;
+}
+
+h3.article-title {
+	font-size: 2em;
+}
+
+button {
+	border: 5px solid black;
+	padding: 0;
+}
+
+button:focus {
+	outline: none;
+}
+
+// CIRCLE BUTTONS
+
+.circ-btns-row {
+	margin-top: 0;
+	.circ-btn-container {
+		@extend .hvr-float;
+	}
+}
+
+.circ-btn-container {
+	display: inline-block;
+  margin: 10vh 3.75em;
+  &:hover {
+  	cursor: pointer;
+  }
+}
+
+button.circ-btn {
+	border-radius: 50%;
+	margin: 1em;
+  width: 8em;
+  height: 8em;
+  background-color: $background;
+  &:hover {
+  	cursor: pointer;
+  }
+}
+
+.person-icon {
+	background-image: url("../img/icons/personicon.svg");
+	background-size: contain;
+}
+
+// SQUARE BUTTONS
+
+.sq-btn-group {
+
+}
+
+.sq-btn-container {
+	@extend .hvr-float;
+	display: inline-block;
+	margin: 0em 1.5em;
+  width: 15em;
+  height: 15em;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+button.sq-btn {
+	border-radius: 5px;
+	margin: 0.75em;
+	width: 12em;
+	height: 12em;
+	background-color: $background;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.sq-btn img {
+	width: 100%;
+}
+
+// RECTANGULAR BUTTONS
+
+.rect-btn-group {
+	margin: 1.5em 0;
+}
+
+.rect-btn-container {
+	display: inline-block;
+	margin: 0 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15em;
+}
+
+button.rect-btn {
+	@extend .hvr-float;
+	border-radius: 5px;
+	margin: 0.75em;
+	padding: 0.75em 1.5em;
+	background-color: $background;
+	font-size: 0.7em;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// FIXED SIDEBAR CIRCLE BUTTONS
+
+.circ-btn-col {
+	z-index: 0;
+	position: fixed;
+	top: 0;
+	padding-top: 2em;
+	&#left-col {
+		left: 0;
+		.circ-btn-container {
+			.circ-btn-label {
+				position: relative;
+				@include transition(left, 0.2s, ease-in-out);
+				left: -15px;
+			}
+			&:hover .circ-btn-label {
+				@include transition(left, 0.2s, ease-in-out);
+				left: 0px;
+				z-index: 10;
+			}
+		}
+	}
+	&#right-col {
+		right: 0;
+		text-align: right;
+		.circ-btn-container {
+			.circ-btn-label {
+				position: relative;
+				@include transition(right, 0.2s, ease-in-out);
+				right: -15px;
+			}
+			&:hover .circ-btn-label {
+				@include transition(right, 0.2s, ease-in-out);
+				right: 0px;
+				z-index: 100;
+			}
+		}
+	}
+	.circ-btn-container {
+		display: block;
+		margin: 1em;
+		@include transition(opacity, 0.5s, ease-in-out);
+		opacity: 0.5;
+		&:hover {
+			@include transition(opacity, 0.2s, ease-in-out);
+			opacity: 1.0;
+		}
+		.circ-btn-label {
+			display: inline-block;
+			box-shadow: 0px 0px 5px 5px white;
+    	background-color: white;
+			@include transition(opacity, 0.2s, ease-in-out);
+			opacity: 0.0;
+			top: -0.3em;
+			&.custom-icon {
+				top: -1.35em;
+			}
+		}
+
+		&:hover .circ-btn-label {
+			@include transition(opacity, 0.2s, ease-in-out);
+			opacity: 1.0;
+		}
+		.circ-btn {
+			margin-left: 1.5em;
+			margin-right: 1.5em;
+		}
+		.larger-circ-btn {
+			width: 9em;
+  		height: 9em;
+  		margin-left: 1em;
+  		margin-right: 1em;
+		}
+		/* fade in/out */
+		&.fade-hidden {
+		  opacity: 0.0;
+		}
+	}
+}
+
+// TOP BAR
+
+#top-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 5px white;
+  z-index: 1;
+  &.fade-shown {
+  	@include transition(opacity, 4s, ease, 1s);
+  	opacity: 0.95;
+  }
+  &.fade-hidden {
+  	@include transition(opacity, 4s, ease, 1s);
+  	opacity: 0;
+  }
+}
+
+h1 {
+	&#site-header {
+		font-size: 1.7em;
+		margin: 0.5em 1em;
+		letter-spacing: 5px;
+		text-align: center;
+		&:hover {
+			cursor: n-resize;
+		}
+	}
+}
+
+// ARTICLE SELECTION
+
+.article-selection {
+	margin: 0 $sidebarMargin;
+	padding-top: 2em;
+}
+
+// ARTICLES
+
+.article {
+	@extend .center-children;
+	margin: 0 $sidebarMargin;
+}
+
+h3.article-title {
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	padding-top: 1em;
+}
+
+.featured-container {
+	max-width: 100%;
+	max-height: 67vh;
+	margin-bottom: 1em;
+}
+.featured-img {
+	min-width: 100%;
+	min-height: 67vh;
+	margin-bottom: 1em;
+	background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#raposters .featured-img {
+	width: auto;
+	height: 67vh;
+	//border: 1px solid black;
+}
+
+.article-text {
+	font-size: 1em;
+  text-align: left;
+  padding: 2em 15%;
+	p {
+		margin-bottom: 1em;
+		line-height: 2em;
+	}
+}
+
+// ABOUT ME
+
+#aboutme-container {
+	margin-top: 0vh;
+	margin-bottom: 20vh;
+	a {
+		text-decoration: underline;
+		color: $graytext;
+		font-size: 1.3em;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.center-children {
+  text-align: center; }
+
+.half-page-pad {
+  height: 50vh;
+  width: 100%; }
+
+.quarter-page-pad {
+  height: 25vh;
+  width: 100%; }
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px); }
+
+/*# sourceMappingURL=utils.css.map */

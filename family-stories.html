@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html ng-app="epBlog">
+
+<!-- Erik Pintar, January 2016 -->
+
+<head>
+  <title>Family Stories</title>
+  <meta property="og:title" content="Family Stories"/>
+  <meta property="og:description" content="Where does the Pintar name come from? The oldest trace of direct Pintar lineage we have comes from the late 1600s to Slovenia, a small country south of Austria. The oldest known stories come from that exact same house over 200 years later, where Lovro Pintar was born in 1814."/>
+  <meta property="og:image" content="https://storage.googleapis.com/blog.erikpintar.com/family_stories/canada_family.jpg"/>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/opensans.css">
+  <link rel="stylesheet" type="text/css" href="css/utils.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+
+  <!-- SCRIPTS AT BOTTOM -->
+
+</head>
+
+<body ng-controller="BlogEntryController">
+
+  <h1 id="blog-header"><a href="javascript:window.location.href = './index.html';">Erik Pintar's Blog</a></h1>
+
+  <div class="blog-entry">
+    <h1 class="entry-title">{{curBlog.title}}</h1>
+    <h2 ng-if="curBlog.subtitle" class="entry-subtitle">{{curBlog.subtitle}}</h2>
+    <h3 class="entry-date">{{makeWrittenDate(curBlog.date)}}</h3>
+    
+    <div class="center-children">
+
+      <div class="prose-container">
+
+        <p>Where does the Pintar name come from?</p>
+
+        <p>As many family names are derived, the Pintar name itself originally comes from an occupation.  It is estimated to be a variation of the German Binder, as in the occupation of bookbinding, or barrel binding.</p>
+
+        <p>The oldest trace of direct Pintar lineage we have comes from the late 1600s, to Matev&#x017E; and Ne&#x017E;a Pintar in Slovenia, a small country south of Austria, that was a country then wasn't (1918, Yugoslavia), then was again as of 1991.  Their home was in Sveti Toma&#x017E; (St. Thomas), house number 16, in a farming village atop a tall hill near &#x0160;kofja Loka.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/whereIsSvetiTomaz.jpg" />
+          <p class="caption">A map locating Sveti Toma&#x017E; in Slovenia</p>
+        </div>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/svet_tomaz_flowers.jpg" alt="" />
+          <p class="caption">The fields of Sveti Toma&#x017E;</p>
+        </div>
+
+        <p>The oldest known stories come from that exact same house over 200 years later, where Lovro Pintar (also known as Laurencij or Lovrenc in Slovenian, or as Laurence in English) was born in 1814.  He served as a priest from 1841 until he died in 1875, primarily known for being the Chaplain of the region of Preddvor, Slovenia.  He was an avid writer, writing Christian works, politically writing for newspapers and also, it seems, writing poetry and similar works in a time of cultural movement toward increasing the renown of Slovenian literature.  One such religious writing was a book written in 1856, spanning over 700 pages called "Virgin Mary, Queen of Heaven and Earth, Our Beloved Mother and Assistant." He owned a large fruit orchard in Preddvor and published articles about fruit cultivation.  At one regional festival, he showcased over 100 varieties of fruit he had developed.  Lovro's brother Jernej, was renowned for fruit growing, and Lovro helped him publish his expert advice on fruit-growing and horticulture, notably, at a time when there were no horticultural schools.  In the region of Preddvor still today, there stands a statue in Lovro's honor.  He also has a <a href="https://sl.wikipedia.org/wiki/Lovro_Pintar" target="_blank">wikipedia page</a>!</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Lovro_Pintar.jpg" alt="" />
+          <p class="caption">Lovro Pintar (b. 1814), my great great grandfather's brother</p>
+        </div>
+
+        <p>Ironically, Lovro's youngest brother, Janez (my great great grandfather, born in 1833), got expelled from school growing up.  Thereafter, likely because of being a stubborn Pintar, Janez didn't send any of his children to the local school.  Thus, from the 1850s - 1880s there was very likely an illiterate and uneducated generation of Pintars, making their living farming on the hillside of Sveti Toma&#x017E;.</p>
+
+        <p>Janez Pintar's son Anton, born in 1867, was the first Pintar to go to America.  His other son was my great grandfather Jo&#x017E;ef, born in 1871.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Jozef_Pintar.jpg" alt="" />
+          <p class="caption">My great grandfather Jo&#x017E;ef</p>
+        </div>
+
+        <p>Eight years later comes a tragic family story. A young woman named Antonia Raigel was 28 and the maid of an innkeeper. All we know of what happened next is that she became pregnant by the innkeeper and when he found out that she was bearing child, he disowned her and sent her away, banishing her from the inn. And when the time came for her to bear her daughter, she died in childbirth. That child was my great grandmother, Marija (Maria) Rajgel (Rei-gel).</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Marija_Raigel.jpg" alt="" />
+          <p class="caption">My great grandmother Marija</p>
+        </div>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Maria_with_Maria.jpg" alt="" />
+          <p class="caption">My grandmother, Maria, with my great grandmother Marija (my grandfather Karl's mom)</p>
+        </div>
+
+        <p>Marija, essentially orphaned at birth, was taken in by nuns and raised until she was 9 in the medieval city of &#x0160;kofja (Sco-fee-uh) Loka, near the granary where two rivers meet, under a looming castle.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/skofja_loka_house.jpg" alt="" />
+          <p class="caption">The house in &#x0160;kofja Loka where Marija was raised by nuns</p>
+        </div>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/skofja_loka.jpg" alt="" />
+          <p class="caption">&#x0160;kofja Loka as seen today</p>
+        </div>
+
+        <p>At 9 years old, Marija's aunt pulled her in to live with her.  In her teenage years during the summers, she was sent to work with farmers in the hills near &#x0160;kofja Loka, on the hillside of St. Thomas.  Early on in her life, one farmer she worked with was wealthy and acted as her benefactor to send her to school for three or four years.  At this time it was unusual for women to be educated, and later in her life she was the only fully literate person in her village so all the villagers would come to her to read and write their letters.</p>
+
+        <p>One summer working the sloped fields in her teenage years, Marija met my great grandfather, Jo&#x017E;ef Pintar. They married in 1898 and would go on to have 15 children, 12 who survived to adulthood.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/sv_tomaz.jpg" alt="" />
+          <p class="caption">Sveti Toma&#x017E;'s church, where it is said Jo&#x017E;ef and Marija got married</p>
+        </div>
+
+        <p>Their first child was born on that mountain, the later ones born in Sankt Jakob right across the border, in Austria.  Since the Austro-Hungarian empire wanted to improve the infrastructure of Slovenia (it was "behind the times"), the government paid to give many people jobs building tunnels in the mountainous northern region of Slovenia, including Janez and Marija's family.  Today these tunnels through the mountain from Slovenia to Austria are the main thoroughfare between the countries.</p>
+
+        <p>In 1907, their sixth child, Anton (known as Tone in Slovenian, pronounced Tony in English), was born, who would live until the age of 105 (until 2012). The 100th birthday party of "Uncle Tone" drew over 120 people: the mayor, the bishop, numerous descendants to three generations below him and relatives from around the world. He could even still run and dance!</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Tone_kids.jpg" alt="" />
+          <p class="caption">Tone with his five of his six children and wife Ur&#x0161;a</p>
+        </div>
+
+        <p>Tone was a tailor by trade and made clothes for monks who were from a cloister in Zagreb, Croatia.  However, on the journey to Zagreb, he was stopped at the Slovenian border and forced to fight in WWII.  After the war, he lived in Ljubljana, the capitol city of Slovenia, and there he met his wife Ur&#x0161;a (pronounced Oorsh-kah).  He was the only one of his brothers to live in Slovenia (the rest of the family was still in southern Austria), which was then Communist.  Because he refused to join the Communist Party, he was not allowed to own any property.  Never owning a house, and even renting the table he did his tailoring on, Tone was thus poor his whole life, yet today has numerous descendants throughout Slovenia. Some now even live back near Sveti Toma&#x017E; and &#x0160;kofja Loka.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Tone_descendants.jpg" alt="" />
+          <p class="caption">Tone with his numerous descendants at his 100th birthday party</p>
+        </div>
+
+        <p>The last child of Janez and Marija was my grandfather Karl, born in 1921.  Earlier in life, Karl and his brother Hans worked with gardening at a Jesuit college where there was a horticultural school.  However, Karl was seen as being too smart for gardening work the rest of his life. It so happened (like Marija, his grandmother) a friend of Hans and Karl named Rosa, who was deaf, became Karl's benefactor to send him to medical school.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Hans_and_Karl_garden.jpg" alt="" />
+          <p class="caption">Hans and Karl working in the garden</p>
+        </div>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/jesuit.jpg" alt="" />
+          <p class="caption">Hans with Jesuit brother Rudolf Magerl</p>
+        </div>
+
+        <p>Karl was studying to be a doctor until World War II broke out. In the army, he was automatically a lieutenant because of his medical school training.  He asked to be trained near his family in Ljubljana, Slovenia, a few minutes walk from where Tone lived (in the Rudnik neighborhood).  Curiously, around the same time, two of their other brothers (one was Jo&#x017E;er) made a living smuggling 80-pound backpacks of sugar from Italy to Austria through Slovenia, sometimes getting shot at while sneaking over the border mountains.</p>
+
+        <p>In the war, Karl was first deployed to the (war-ending) Russian front in Finland. Before too long, the Germans began to retreat back to Germany. Karl's group had to cross the North Sea (between Norway and Germany) by boat in the middle of the night in the winter. However, during the crossing, the Allies attacked their convoy of ships with bombs! Many of the ships sank, but Karl's made it.</p>
+
+        <p>Once back in Germany, Karl was deployed with a special small 4-5 man crew. They were armed with bazookas and ordered to shoot the treads off of the lead tanks of the advancing Allied armies to slow them down. Not long into this assignment, Karl was looking through his binoculars for the Allied troops, and noticed that they were well past where he and his men were stationed, far beyond enemy lines! Realizing the war was essentially over, Karl gathered his men and suggested they disband, hide their uniforms and military gear, and make their way home. </p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Karl_army.jpg" alt="" />
+          <p class="caption">Karl, in a military uniform, with his brother Hans</p>
+        </div>
+
+        <p>Left with a disbanded army and no resources, Karl had to make his way back to Austria from an area in or near northern Germany, a journey that likely took weeks. After getting rid of his Nazi uniform, he "borrowed" a woman's dress off of a clothesline, a scarf for his head, and a bicycle, disguising himself and getting a quicker means of transport home. On his long ride home he rode mostly at night and hid during the day.</p>
+
+        <p>In Vienna, Karl continued his doctoral studies. While working in the hospital he met a charming nurse while they both were investigating urine crystals under the microscope.  She was from a town called Franzen in the farmlands north of Vienna and had a strong Catholic faith, almost becoming a nun at one point earlier in life. The nurse, Maria, would later become my grandmother.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Maria_hospital.jpg" alt="" />
+          <p class="caption">The hospital where Karl and Maria met</p>
+        </div>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Maria_nurse.jpg" alt="" />
+          <p class="caption">Maria (left) with a fellow nurse</p>
+        </div>
+
+        <p>Maria was born in 1931 to Ferdinand and Viktoria Eichberger who had a family farm in Brand, Austria.  Unfortunately there wasn't enough money in the family so they lost the farm and moved from Brand to Wetzlas, but for similar reasons they had to move out of Wetzlas.  Through Viktoria's family they finally settled on land in Franzen, a very small farming village with empty houses no one was in and a river that cut through the town's small rolling hills.  They at first rented a house with an adjacent storefront, so Viktoria could work while taking care of the kids.  Things were doing better under Hitler during the depression in the late 30s, but then a military base was being built in all the uninhabited land next to Franzen. They planned to expand into and probably demolish Franzen.  However, the residents fought against that and didn't want to leave so the military base was not expanded into Franzen.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Ferdinand_and_Viktoria.jpg" alt="" />
+          <p class="caption">Viktoria Dastel (b. 1902) and Ferdinand Eichberger (b. 1900), my grandmother Maria's parents (this picture taken about a year before they were married in 1928)</p>
+        </div>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Franzen_house.jpg" alt="" />
+          <p class="caption">Ferdinand and Viktoria's house in Franzen, Austria</p>
+        </div>
+
+        <p>Maria grew up going to an all-girls Catholic boarding school in Zwettl, only going home once a week when her father picked her up and drove her home.  She finished four years of nurse training (similar to an undergraduate nursing program) then had two years of practical training before residency.  This training was at Allentsteig, where she met Karl.  Karl was originally supposed to only have a short stay at the hospital in Allentsteig, substituting for a doctor who went on vacation, but one of the doctors there died in a car accident, causing Karl to be needed there longer.  That left enough time for Maria and Karl to get "entangled" (as Maria later put it) and the two decided to get married and follow Karl's other siblings to Canada.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Karl_Maria_table.jpg" alt="" />
+          <p class="caption">Karl and Maria socializing with Maria's brother Anton and her family in Franzen</p>
+        </div>
+
+        <p>First, however, they both moved to Vienna, Austria, working in a hospital there.  From that time comes a comical story.  One day in 1954, Maria's brother Anton started to feel pain in his side.  He drove himself to the hospital on a bumpy hour-long car ride that only intensified the pain.  He asked Maria what to do and she told him to take some medicine and go home.  The next day Anton's pain got much worse and a Russian ambulance came, brought him on an even bumpier ride - he was doubled over in pain.  At the hospital it was finally diagnosed that Anton's appendix was about to burst - if it had, he likely would have died.  In the operation that immediately took place, Maria and Karl both got some medical experience assisting the surgery.  As a token, they kept Anton's removed appendix in a jar filled with alcohol.</p>
+
+        <p>In 1955, Karl and Maria married in Vienna's St. Gertrude's Church, in January.  A cold January day wasn't a typical time for a wedding, but the two were determined to head to Canada in July and the only way for Maria's family to allow her to go was if they were married, committed to each other.  Thus, Maria wasn't seen smiling very much on her wedding day, still being anxious about the speed at which everything was taking place and about soon moving across the world, far from her family and everything she'd ever known.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Maria_Karl_wedding.jpg" alt="" />
+          <p class="caption">Karl and Maria, married 1955</p>
+        </div>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/Maria_Karl_serious.jpg" alt="" />
+          <p class="caption">An unsmiling Maria and Karl on their wedding day, nervous about all the rapid change that would occur in 1955</p>
+        </div>
+
+        <p>So that July in 1955 they embarked on the long voyage across the ocean to Canada, settling in Montreal. They were the third Pintars to make the journey to the Americas.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/boat_to_Canada.jpg" alt="" />
+          <p class="caption">The boat that Maria and Karl took to Canada</p>
+        </div>
+
+        <p>The first in Karl's family to go to the Americas was his brother, Jo&#x017E;er.  Jo&#x017E;er was a shoemaker by trade but didn't have enough money at first to pursue his profession in Canada.  Thus, he worked with his friend Rudy and they hopped on trains across Canada to work as hired hands to clear forest in unsettled territories.  They would work all day long for just one buck.  Once he had enough money Jo&#x017E;er sponsored his sister Dina to come to Canada, who was skilled in dye and fabric work.  Dina eventually fell in love with Rudy and the two married.  Dina sponsored Hans to come, who later sponsored Karl.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/reunion_photo.jpg" alt="" />
+          <p class="caption">The siblings Hans, Tone, Dina, Jo&#x017E;er, and Karl Pintar, in a reunion in America in 1969</p>
+        </div>
+
+        <p>Karl's brother Hans was a mountain man if there ever was one. Rebuilding a rundown log cabin from trees he cut down himself, he lived in the woods of Canada and hiked the mountains for pleasure. He worked in the largest cemetery of Montreal as a landscaper. There he planted over 3,500 trees that today stand beautifully throughout the whole area.</p>
+
+        <p>In the end of that same year, 1955, Karl and Maria also had their first child, the first of seven. Those first years were hard. Their rent was $75 a month while Karl's pathology residency only paid $50. So, with taking care of the child, Maria also worked as a tailor and cleaning lady through a connection with her niece Fran&#269;ka (who was a similar age). To cut costs in those early days, Maria made clothes for her children from curtains and other fabrics, much like the film Sound of Music, later a family favorite. With the help of their other relatives in Canada, Karl and Maria made it through.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/family_stories/canada_family.jpg" alt="" />
+          <p class="caption">Karl and Maria in Montreal, Canada with Karl's mother Marija and their first five children; my father is on the far left</p>
+        </div>
+
+        <p>Soon, my father was born, and a few years later, they moved to Wisconsin, near Milwaukee, where I was born.  Today Karl and Maria's legacy lives on through their many descendants, who live throughout the United States.</p>
+
+        <p>So, whether Pintar means binding books or barrels, our family is bound by a common history and a love for family that persists to this day and will surely continue into the stories yet to be written.</p>
+
+        <br>
+        <p class="caption lyric-text">For more family stories and a video filmed at some of these locations, see my other post about the music video <a href="./jesus-only-jesus.html">Jesus, Only Jesus</a>.</p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="entry-footer" ng-include="'footer.html'"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/lib/jquery-2.1.4.min.js"></script>
+  <!--<script src="js/lib/jquery-ui.min.js"></script>-->
+  <script src="js/lib/angular-1.4.6.min.js"></script>
+  <script src="js/blog-map.js"></script>
+  <script src="js/blog-entry.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47730913-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>

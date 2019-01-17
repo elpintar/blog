@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html ng-app="epBlog">
+
+<!-- Erik Pintar, January 2016 -->
+
+<head>
+  <title>My Deafness, A Deaf School in India, and an Undocumented Sign Language</title>
+  <meta property="og:title" content="My Deafness, A Deaf School in India, and an Undocumented Sign Language"/>
+  <meta property="og:description" content="Last October 31st I sent in my application for an internship at the company I longed to work for - an application I thought and prayed about for months. It was my dream internship. However, I told the recruiter that another opportunity had come up, an opportunity I couldn't pass up."/>
+  <meta property="og:image" content="https://storage.googleapis.com/blog.erikpintar.com/istep/50-coverphoto.jpg"/>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/opensans.css">
+  <link rel="stylesheet" type="text/css" href="css/utils.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+
+  <!-- SCRIPTS AT BOTTOM -->
+
+</head>
+
+<body ng-controller="BlogEntryController">
+
+  <h1 id="blog-header"><a href="javascript:window.location.href = './index.html';">Erik Pintar's Blog</a></h1>
+
+  <div class="blog-entry">
+    <h1 class="entry-title">{{curBlog.title}}</h1>
+    <h2 ng-if="curBlog.subtitle" class="entry-subtitle">{{curBlog.subtitle}}</h2>
+    <h3 class="entry-date">{{makeWrittenDate(curBlog.date)}}</h3>
+    
+    <div class="center-children">
+
+      <div class="prose-container">
+
+        <p>Last October 31st I sent in my application for an internship at the company I longed to work for - an application I thought and prayed about for months. It was my dream internship. I meant to apply earlier, but never felt like I was ready. And I still didn't feel ready as I applied that day...my hands trembled as I clicked submit.</p>
+
+        <p>Last May 21st I boarded a plane headed to India. It was a place I had never been, on the opposite side of the world - a journey I had thought and prayed about for months. It would be my longest time ever abroad, nine weeks. I had made many preparations, but never felt like I was ready. And I still didn't feel ready as I boarded that plane...my hands trembled as I said goodbye to the place that was my home.</p>
+
+        <p>Back in October, three days after I had applied for my dream internship, I talked with the recruiter. I had done the first interview task quite well and really in fact, had enjoyed it. However, I told the recruiter that another opportunity had come up, an opportunity I couldn't pass up.</p>
+
+        <p>Nine weeks after I boarded that plane, I was coming back home. As I saw the bustle of international faces I could think of nothing but the faces of the children, teachers, and close friends I was departing from. Instead of my dream internship, I had come to know and love a community in a place I had never heard of, and been able to leave a mark in that place through technology and my skills, but even more so through new connections of the heart.</p>
+
+        <p>I had said no to my dream internship to instead develop technology for the deaf and hard of hearing and blind in India. I thought I was crazy to do so. And that feeling sometimes persisted even while I was there. But I tell you now, it was worth it. It wasn't easy - at any point - but it was worth it.</p>
+
+        <p>And as I write now - jet-lagged, sleep-deprived, with a cold and newly-diagnosed ear infection - I wish to share the story of this experience with you. It is not a simple story, nor is it short. But I hope it will be worth the read.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/50-coverphoto.jpg" alt="Erik and Minnar with five deaf students" /></a>
+        </div>
+
+        <p>I will continue to introduce this story even further back in time to when I was born. I was born with 80-90 dB hearing loss in both ears, diagnosed as severe to profoundly deaf. Because infant hearing screenings were not conducted at birth back then, it was not discovered until I was 12 months old.</p>
+
+        <p>My mother, who had studied child and family development in college, knew how much this could set me back, and was worried about my development with this critical delay. She prayed that I would one day be able to be independent and support myself with a job. This was her dream for me in this place of worry and fear.</p>
+
+        <p>At one year old, I was fitted with two hearing aids and brought into a Birth-to-3 program at Milwaukee's <a href="http://hearwi.org" target="_blank">Hear Wisconsin</a> center, the only program in the state with such assistance for my needs - which happened to be within 10 minutes of my house. There I had early intervention with speech therapy and being taught American Sign Language (ASL) to communicate. So I was raised with fluency in both ASL and spoken English through the excellent and loving people at Hear Wisconsin as well as my family learning sign and using it with me at home, in addition to exposure to spoken English through my hearing aids.</p>
+
+        <p>I was "mainstreamed" into public school with the help of an FM microphone system that helped me understand what the teacher said, and more personally, a sign language interpreter in every class with me, to ensure I could pick up everything the teacher said when my hearing technology (often) wasn't enough.</p>
+
+        <p>I continued speech therapy through my early years (much to my displeasure - it was one of the most boring and frustrating things I have ever had to do) and many people commented that they couldn't tell I was hard of hearing.</p>
+
+        <p>When I was 16 years old, a family friend asked my mother if I had considered a cochlear implant. In Wisconsin, it is required for insurance to cover cochlear implant costs for children under 18 who would benefit from it. After some hearing tests, I was told there would be a benefit and went for it. A year after the surgery, the tests had shown that I gained a 25% increase in single-word comprehension (one of the toughest tests, since there is no context for the word like I would have in ordinary situations).</p>
+
+        <p>Many (if not all) of these accommodations throughout my life were made possible through the Americans with Disabilities Act. It was passed into law in 1990. I was born in 1993. Lucky.</p>
+
+        <p>Lucky. Lucky. I am nothing but fortunate to be where I am and grateful to my parents' prayers and God in heaven to be where I am today.</p>
+
+        <p>Today I am at Carnegie Mellon University studying in both one of the leading Electrical and Computer Engineering programs in the nation as well as perhaps the most well-known Human-Computer Interaction program in the world. This not by my own merit, but I truly believe by the support of so many along the way.</p>
+
+        <p>Now I am able to see my disability as a blessing, for all the ways it has brought me into a more compassionate understanding of the world and how my struggles with being hard of hearing have cultivated a heart of gratitude towards God and other people.</p>
+
+        <p>And today, my mother's dream has become reality and even more so than she ever thought possible.</p>
+
+        <p>This is the beginning of my story.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/05-schoolkids.jpg" alt="The deaf school building" /></a>
+        </div>
+
+        <p>From the telling of my past, I have but one story of deafness. This summer, across the globe, I was able to meet and get to know deaf children in India and understand part of their story and their situation.</p>
+
+        <p>In India, (according to the World Health Organization) 6% of the population has "disabling hearing loss", with most hearing loss and deafness in India coming from causes that would be preventable with proper treatment.</p>
+
+        <p>At the <a href="http://www.mathrublindschool.org/nandini-project/" target="_blank">Mathru Center for the Deaf and Differently-Abled</a>, this very likely applies, since most children come from rural family environments. That means many of the children have deafness caused by a high fever that was left untreated, or another preventable cause. It breaks my heart that many students have hearing loss that could have been prevented and likely also had little proper support and care after its onset. (And that there are many more unknown children out there who aren't getting any care.)</p>
+
+        <p>Through the generosity of the Mathru Educational Trust and those who support it, the children at the Free School for the Hearing-Impaired (part of the Mathru Center for the Differently-Abled) are able to receive education, housing, food, and care for no cost to the family. It was already an inspiring place to be able to contribute with our team's work.</p>
+
+        <p>The first thing I noticed at the Center was that my ASL was not understood, outside of fingerspelling English words. We asked about what sign language was used and were given a dictionary of Indian Sign Language, developed in the late 1970s. This was not quite what they used either and eventually we realized their sign language was a very local version, which we called "Kannada Sign Language" after the area's locally spoken language. Basically, we had found no available reference or dictionary for the signs we were seeing, with barely a mention even online.</p>
+
+        <p>Where this became especially noticed was with the new teacher at the Center when we first arrived. She had to pick up the local sign language only from other teachers or asking the students for signs. This all while she was adjusting to teaching at a new school with the added difficulty of teaching children who could not hear, and thus who she could not communicate effectively with or verbally discipline as is necessary in the early grade levels of Kindergarten through 4th offered at the school.</p>
+
+        <p>What's more, in our second week two other teachers left the Center, leaving two vacancies. There are only four teachers for the deaf and hard of hearing at the Center. This then left only one teacher who had been at the school for more than two weeks.</p>
+
+        <p>Observing further in the classroom, we noticed teachers explaining objects or concepts frequently through pictures. Because the teachers had a limited sign vocabulary to work with, they often showed concepts through hand-drawn diagrams and scenarios on the chalkboard or through many hand-made or store-bought flashcards or posters. In class, teachers went back and forth between showing a picture, a written word, and the sign for that word with the students.</p>
+
+        <p>By our fourth week there, there were three new teachers, excited to work with the children, but daunted at the amount of effort it takes with all the adjustment, learning sign language, and preparing these visually-based lesson plans.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/40-diagrams.jpg" alt="a teacher making diagrams on the blackboard" /></a>
+        </div>
+
+        <p>Beyond just the atmosphere of the Mathru Center, there were many cultural forces against us and our work to help deaf children - including many cultural misconceptions about deafness. Through our time there and talking with different people in the school and outside, we discovered a conception of deafness in the general populace of India roughly similar to the following:</p>
+        <ul>
+          <li>Those without hearing are deaf and dumb; they cannot hear, communicate, nor think properly or as fully as a normal person.</li>
+          <li>The deaf and dumb use gestures in their attempt to communicate. They must be taught spoken language in order to be educated and think as we do. Their sign language cannot communicate complex thought, it is only a rudimentary set of gestures allowing for very basic communication.</li>
+          <li>Sign language is universal - anyone with some training can learn the same gestures that the deaf use.</li>
+          <li>The deaf and dumb are able to see and work with their hands. Thus they are not disabled.</li>
+        </ul>
+        <p>However, I present also here the corrected and informed views of deafness (even misunderstood in America by many!):</p>
+        <ul>
+          <li>Those without hearing are deaf; they cannot hear, but with the right access to language (through sign or spoken language with hearing aids) they can be as fully functioning as a hearing person. They can function as a member of hearing society with accommodations and/or within a Deaf community based around a shared sign language to communicate and their own Deaf (capital-D) culture.</li>
+          <li>The deaf use sign language to communicate, which can convey information just as rich and complex as spoken language can. And in some ways, even more richly (through use of 3D space and facial expression, for example).</li>
+          <li>Sign language is not universal, with many versions just as spoken language has: American, British, Indian, Australian to name a few. One who knows only American Sign Language cannot understand someone who speaks British Sign Language, for example.</li>
+          <li>The deaf are able to see and work with their hands, but are disabled in society by many communication and hearing barriers (not being able to communicate easily with the average hearing person, can't hear critical sirens or fire alarms and such) for which they require assistance or accommodation to function equally and fully as a member of society.</li>
+        </ul>
+        <p>So while we were learning to understand Indian culture, we were also coming to understand the misconceptions around deafness in India. Using my knowledge as a hard of hearing individual and past education in ASL and Deaf Culture in the US, I was able to discover these misconceptions and speak with teachers and a reporter about a better understanding of deafness. These misconceptions were hard to hear but were important to know and inspired and fueled our work even more as people committed to helping this misunderstood people group.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/50-playground.jpg" alt="children playing on the playground" /></a>
+        </div>
+
+        <p>From all these insights both about the Center and Indian cultural perceptions of deafness, we thought about how we could help with technology. We first knew that there was a very clear need for a way for new teachers to be quickly trained in learning the local sign language.</p>
+
+        <p>Our first step was to film and edit two videos to help new teachers: one of the Kannada alphabet in sign language (with 51 letters!) and another of commonly used phrases. We also posted the videos on YouTube, so that these basic resources would be freely available online about Kannada Sign Language.</p>
+
+        <p>But how to make a better form of a dictionary or reference for them? We certainly didn't have time in 9 weeks to document an entire language. The solution then seemed to fall in the hands of the teachers to self-document their sign language through some kind of video-taking and saving reference tool.</p>
+
+        <p>So around our third and fourth week in India, we began looking at all the requirements and brainstorming ideas from our observations. We wanted a tool that would allow teachers to record videos of signs, categorize them into lessons and units, and teach and learn the signs from each other. With the visually-based teaching methodology, we also wanted abilities to take or upload pictures in the tool. This way the teachers could integrate this dictionary as a tool for each other to learn signs as well as a classroom tool featuring a simultaneous juxtaposition of signs, videos, and English words.</p>
+
+        <p>Alongside the cultural conceptions of deafness, there was also a greater hope in this project that it could combat misconceptions of deafness by showing the rich vocabulary of sign language and by providing access for sign language learning to more people. Through the spread of this tool, many others could potentially understand deafness better by learning the language of the deaf and being able to communicate with them, the first step to understanding.</p>
+
+        <p>So we had the basic ideas and vision. The next critical problem: how?</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/40-flashcards.jpg" alt="a collection of flashcards with words and pictures" /></a>
+        </div>
+
+        <p>In choosing the technology for this sign dictionary creator, we thought initially tablets would be great - very portable and easy to use. However, the teachers were unfamiliar with tablets and preferred computers or laptops. And all were more likely to gain better technology literacy from using a keyboard and mouse interface that could transfer to other tasks with computers in the future.</p>
+
+        <p>From the laptop interface decision we had to choose the programming language for the application. The team knew only three languages well: Python, C, and web languages (HTML, CSS, JavaScript). Looking at what could support a heavily graphics-based experience with data storage, web languages proved to fit best and allow for the quickest development. However, this choice left me alone in my knowledge of web languages on the team, which left it difficult for my teammates to assist developing this project.</p>
+
+        <p>Thus began the huge task of creating this application from scratch, an application that would feature video and picture capturing, picture uploading, and creation, editing, updating, deleting, and categorizing of dictionary entries. In addition to this work was my part in all the projects our team was doing at the blind school including fixing and updating the braille tutors there and training teachers and staff on useful technology and web tools.</p>
+
+        <p>Around the sixth of nine weeks in India, I was overwhelmed. We had seen a great opportunity and need for this technology, but would we be able to finish it in time?</p>
+
+        <p>I started to code everywhere - at both schools, at home, in the car - and slowly the features came around. But for every feature that was added - several others broke or created more programming bugs. It was three steps forward, two steps back.</p>
+
+        <p>Along the way, we showed the experienced teacher at the Center the video capture tool (as one of the first features that was developed) and she became familiar with it and could use it well. Later we showed how to create words and topics and organize the dictionary. Slowly the teachers and us all became more excited at the potential - but it was not yet fully usable, filled with bugs, potential data erasures, and frustrating glitches.</p>
+
+        <p>In the beginning of the summer, I had pictured a few weeks at the end of summer to test the application, see how it was used in class, and iterate on it with the suggestions of the teachers. Now I was simply asking myself - would I even be able to leave anything usable behind?</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/75-showlaptop.jpg" alt="Erik showing his laptop to 10 excitedly peering deaf children" /></a>
+        </div>
+
+        <p>At the beginning of our final week in India, the ninth week, the application was finally coming together but still not quite there. Tensions and stress ran high on the team as we tackled many different objectives and final things to do in this week - four presentations, a 30-page report, wrapping up three projects including documentation, help guides, and training teachers for each.</p>
+
+        <p>And I constantly felt I was the most behind - my application was still on the edge of working, almost there, but brought down by critical bugs. Most of all, on the new laptops we had gotten donated for the Center, the video recording was far too laggy to use and made the teachers frustrated. I had three days left to leave whatever I would leave behind, could leave behind.</p>
+
+        <p>At this point, I thought of the children. I thought of the opportunities that I had growing up. I thought of all the knowledge I had been given through assistive technology and all the ways technology had benefitted me. I thought of this special opportunity to come to India. I thought of the leaders and donors of TechBridgeWorld who had made this trip and program possible for my teammates and I. I thought of the gracious hosts at Mathru, including Ms. Muktha who had given so much to welcome us and make us feel at home. I thought of the hard-working teachers we had gotten to know who give so much with the little resources they have to give these children an education. I thought of the children. By statistics alone I should be one of them - a deaf child born in a developing country, without access to all that could help them.</p>
+
+        <p>But I was here. I had been given all these things throughout my life, and was now potential access for them to some of what could help them. And as far as I was able, God-willing, I would not leave without leaving something helpful to them. Not for my own sake, but for those I had dearly in mind, who were the reason I was here.</p>
+
+        <p>With this, I put my headphones in, chewed gum, whatever I was able to do to stay up in the night and code through the remaining difficulties. I changed the video format to allow non-laggy recording. I found all the remaining errors in the code I could find. And with a little perseverance and a little prayer, I was able to bring the teachers something helpful the last two days at the Center. Or, that I hoped was helpful. How would the teachers respond to the final technology? This was the final test...</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/80-usingsignbook.jpg" alt="Two teachers using the SignBook technology on a laptop" /></a>
+        </div>
+
+        <p>I brought the <a href="http://erikpintar.com/signBookDemo/" target="_blank">finished product (a demo is at this link)</a>, now named SignBook, to the Center on our final Wednesday with the teachers. I spent as much time as I was able showing the teachers SignBook, training them, and them letting them use it on their own to test their independence with the tool and add topics and words of their own!</p>
+
+        <p class="quote-text">"This is very good because I can learn on my own and be fine teaching to the children. If I ask [the other teacher] she will teach me after 4:00 PM, but now I can ask and she will enter in this. I will see again, repeated, how to do the sign - it is the easy way! I can easily see this and then teach to the children."</p>
+
+        <p>After an hour of training one of the new teachers, I quickly jotted down the above quote of hers. SignBook had captured her excitement and imagination.</p>
+
+        <p class="quote-text">"This is a most wonderful thing you have done. Now anyone can document their sign language, and even give a copy to others to learn! This has so much potential. Potential to provide access to a family, a community, to communicate with the deaf. I am proud of you. I am proud of your team."</p>
+
+        <p>This quote, paraphrased from a visitor to the school who saw our team's projects, voiced the early hope I had, the ambitious and far-reaching hope that this could provide greater access to the deaf, their language, and change perceptions of deafness in India.</p>
+
+        <p>My heart leapt at these words and the interactions with teachers and staff the last three days at Mathru. They had picked up using SignBook more quickly than I had thought possible and each voiced their excitement at its potential. There was even a moment when 20 children gathered around as I trained a teacher, all engaged with SignBook as I used it to test their knowledge of words the teachers had input. Their faces lit up as they burst with excitement to proudly show their sign language knowledge and see more of what was on SignBook. I had done something good. I had left something usable, and useful! I could breathe easy.</p>
+
+        <p>Make no mistake - this is merely one part of our team's work, merely one aspect of our story. iSTEP 2015 made incredible impact with our short time in India. And I could not have done anything without Minnar, Maya, Amal. Though I may have written the code for this one project, there are innumerable ways this project and the total impact of our summer was critically made possible by the efforts of my teammates.</p>
+
+        <p>At the Mathru Center there are now two laptops, both with a copy of SignBook, which exists as a simple folder containing all the dictionary data and an interactive application that runs with a double click. This folder can also be simply copied to another computer - able to be spread very easily on thumb drives, which leads to the feasibility of widely spreading knowledge of sign language among anyone with computer access. Since TechBridgeWorld continues a partnership with the Mathru schools there is also potential for future development and iteration upon this first prototype of SignBook.</p>
+
+        <div class="img-container">
+          <img src="https://storage.googleapis.com/blog.erikpintar.com/istep/90-lastpic.jpg" alt="Erik with many young deaf Indian students" /></a>
+        </div>
+
+        <p>To close this story, I am so grateful for this opportunity and for everything that led me here - not the least including my deafness. If there is anything I hope to leave you with, it is these words:</p>
+
+        <p class="big-quote-text">Sometimes we must say no to our dream in order to say yes to the dreams of those you can make possible.</p>
+
+        <p>We each have a unique and powerful role to play on this earth. With noticing eyes for those in need and love for those less fortunate than us, let us not neglect the impact we can make upon the lives of others through our God-given gifts. You may discover things even greater than your dreams can foretell.</p>
+
+        <br>
+
+        <p class="small-font">This post is originally from our team's <a href="https://istep2015.wordpress.com/2015/07/28/say-no-to-your-dream-say-yes-to-the-dreams-of-those-you-can-make-possible" target="_blank">wordpress blog</a>, on which you can find out many more stories and pictures from our nine weeks in India.</p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="entry-footer" ng-include="'footer.html'"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/lib/jquery-2.1.4.min.js"></script>
+  <!--<script src="js/lib/jquery-ui.min.js"></script>-->
+  <script src="js/lib/angular-1.4.6.min.js"></script>
+  <script src="js/blog-map.js"></script>
+  <script src="js/blog-entry.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47730913-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>

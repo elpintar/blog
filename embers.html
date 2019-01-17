@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="epBlog">
+
+<!-- Erik Pintar, January 2016 -->
+
+<head>
+  <title>Erik Pintar's Blog</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/opensans.css">
+  <link rel="stylesheet" type="text/css" href="css/utils.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+
+  <!-- SCRIPTS AT BOTTOM -->
+
+</head>
+
+<body ng-controller="BlogEntryController">
+
+  <h1 id="blog-header"><a href="javascript:window.location.href = './index.html';">Erik Pintar's Blog</a></h1>
+
+  <div class="blog-entry">
+    <h1 class="entry-title">{{curBlog.title}}</h1>
+    <h2 ng-if="curBlog.subtitle" class="entry-subtitle">{{curBlog.subtitle}}</h2>
+    <h3 class="entry-date">{{makeWrittenDate(curBlog.date)}}</h3>
+    
+    <div class="center-children">
+
+      <!-- <iframe src="http://player.vimeo.com/video/101550349" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+      <iframe src="http://www.youtube.com/embed/G4O05Qo1mBI" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+      <br>
+    
+      <div class="prose-container" style="text-align: center;">
+
+        <p class="small-column">
+          The first song I made a full length music video for was about overcoming fear.
+        </p>
+
+        <p class="small-column">This song is about hope, the kind of hope that goes beyond this world, beyond these temporary fears.</p>
+
+        <p class="small-column">Inside of us I think we all have a thirst for a place that no place in this world (or universe) can satisfy.  The desire to be in a place of love, belonging, and peace.</p>
+
+        <p class="small-column">And this song represents for me the hope that even though this world is imperfect, and we are imperfect, I believe there will be this place someday where all will be made right, and all will be made new.</p>
+
+        <p class="small-column"><i>Embers</i> offers a picture of that day - when we will <br>&quot;burn bright, as we all unite&quot;<br>and we will<br>&quot;watch the sky, as it fills with light.&quot;</p>
+
+        <p class="small-column">And this is something I think that is often missed in the message of Christianity.  We have this overwhelmingly joyful hope for this coming day, when heaven meets earth, and the whole universe will be filled with glorious light.</p>
+
+        <p class="small-column">Light from where?</p>
+
+        <p class="small-column">From God himself.</p>
+
+        <p class="small-column">For I believe that the greatest joy and <br>greatest day will be at the end of time <br>&quot;when all's said and done&quot;<br> and we will see God.</p>
+
+        <p class="small-column">And this is the hope that I have, for the day when He returns and makes me new, makes his people new, makes a new Earth, a new Heaven, evil being forever finished, and God being with his people forever.</p>
+
+        <p class="small-column">This is the hope that I have.</p>
+
+        <p class="small-column">And <i>Embers</i> to me shows this flame of hope that I see compelling all believers in the name of Jesus to endure and love and serve God and the people around them with thanksgiving and joy - and all of it stems from this hope, this faith, this fire.</p>
+
+        <p class="small-column">To fellow believers, stay strong.  Don't let the fire die.</p>
+
+        <p class="small-column">To all, I pray this small endeavour of a video can give you a glimpse of this beautiful hope and flame, this ember that can spark something beyond what any of us can even imagine.</p>
+
+        <p class="small-column">May this video spark in you a beautiful kind of hope.</p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="entry-footer" ng-include="'footer.html'"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/lib/jquery-2.1.4.min.js"></script>
+  <!--<script src="js/lib/jquery-ui.min.js"></script>-->
+  <script src="js/lib/angular-1.4.6.min.js"></script>
+  <script src="js/blog-map.js"></script>
+  <script src="js/blog-entry.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47730913-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>

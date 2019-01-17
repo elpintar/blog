@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html ng-app="epBlog">
+
+<!-- Erik Pintar, January 2016 -->
+
+<head>
+  <title>How to Deal With Being Overwhelmed in College</title>
+  <meta property="og:title" content="How to Deal With Being Overwhelmed in College"/>
+  <meta property="og:description" content="I'm not getting anywhere - maybe I'm not cut out for this?  Is it always going to be this tough?  It seems like everyone else is doing well, already knows so much, and I'm lagging behind, struggling."/>
+  <meta property="og:image" content=""/>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/opensans.css">
+  <link rel="stylesheet" type="text/css" href="css/utils.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+
+  <!-- SCRIPTS AT BOTTOM -->
+
+</head>
+
+<body ng-controller="BlogEntryController">
+
+  <h1 id="blog-header"><a href="javascript:window.location.href = './index.html';">Erik Pintar's Blog</a></h1>
+
+  <div class="blog-entry">
+    <h1 class="entry-title">{{curBlog.title}}</h1>
+    <h2 ng-if="curBlog.subtitle" class="entry-subtitle">{{curBlog.subtitle}}</h2>
+    <h3 class="entry-date">{{makeWrittenDate(curBlog.date)}}</h3>
+    
+    <div class="center-children">
+
+      <div class="prose-container">
+
+        <p><i>This article was written for the Mudge Monologue, a weekly community email for Mudge House (a Carnegie Mellon dormitory) and is used as a vessel for Mudgies (residents of Mudge) to share thoughts, experiences, and outlooks.</i></p>
+
+        <br>
+        
+        <p>Hello, Mudgies!</p>
+
+        <p>Yesterday a Mudgie was asking me about a course they were taking and they were concerned: the homework is taking far too long, I'm not getting anywhere - maybe I'm not cut out for this?  Is it always going to be this tough?  It seems like everyone else is doing well, already knows so much, and I'm lagging behind, struggling.</p>
+
+        <p>I thought more and realized that in my four years here at CMU, I have experienced two things over and over again:</p>
+
+        <p class="big-left-indent">1. No matter how good you are at something, there's always someone who's better at it than you.</p>
+
+        <p class="big-left-indent">2. No matter how alone you feel in something, there's always someone who's in a very similar situation to you.</p>
+
+        <p>With the first, I realized this most when someone said this simple fact:</p>
+
+        <p>"Most all of the people here were in the top 10% of their class.  But even here, only 50% of people are going to be above average."</p>
+
+        <p>It's simple, obvious - but surprisingly meaningful.  We have to remember that being surrounded by the brightest can sometimes make us feel dim.</p>
+
+        <p>But that's why the second piece is so critical.  No matter how you feel, knowing you're not alone - that finding someone in a similar spot to you is likely just a walk and a talk down the hall in Mudge - this is what has reassured me: it's okay.  You're not alone.  This is hard.  But with support and perseverance and patience, any obstacle here can be overcome.  So just hang on, don't let your mind get clouded with doubts.  Let the growth happen, but don't think you're alone in any struggle - not for a minute - and talk about it with others.  You'll be pleasantly surprised to find how common of an experience you're having.</p>
+
+        <p>And now, coming into my fourth time living in a first-year house community, there are two things I find myself recommending over and over to those beginning their journey here (and what I would recommend to my past self if that was something I could do):</p>
+
+        <p class="big-left-indent">1. Do a few things, and do them well.</p>
+
+        <p class="big-left-indent">2. Don't compare yourself to others.</p>
+
+        <p>The joy that comes from doing a few things well took me a long time to realize.  It's not really about getting the most experiences you can, it's about getting the most out of the experiences you have.  When I have too much on my metaphorical plate, everything suffers.  When I am doing a few things well, I am truly satisfied and able to put my best self toward what I hope to achieve and make deeper investment and discoveries in those few things.  </p>
+
+        <p>Side note: Just because you have an interest in something doesn't mean you have to double major in it.  I'm somewhat hypocritical saying this, with two majors and a minor - but honestly having done that, most of what I'm really thankful for learning came from a few really good classes (and a few really good clubs and opportunities).  What bothers me most is someone who rushes through a set of crammed experiences for another title and ends up looking back on years sleep-deprived with no time for friends and not really retaining very much of what they were supposed to learn.  I've learned much more from my semesters of 45 units (which are normal college credits times 3) than of 60 units.  Take ten minutes sometime to add up how many units you need for your major, and divide by the number of semesters you have here.  And breathe - there's likely a very reasonable number there.  Take it easy, do a few things, put more of yourself into what you do, and you'll be happier, healthier, and learn a heck of a lot more.</p>
+
+        <p>On the second bit of advice, even if you see others seem to do so much and do it so well - comparing yourself to them is practically robbing yourself of your own joy.  You may not be in the top 50%.  But that doesn't mean you can't experience great things.  In fact, it's not even about being at the top.  As I near the end of my time here, I recognize more and more why I was here all along - to learn.  The world doesn't need people who are plastered with gold stars, glittery As, and nice r&eacute;sum&eacute;s.   The world needs people who know what they are doing, care about what they are doing, and are doing something with what they know.  </p>
+
+        <p>I believe everyone was made for their very own - and beautiful - purpose on this earth.  Some of these purposes rank higher and happen to be more valued in the man-made constructs of this world, but joy and satisfaction remain available to all.</p>
+
+        <p>So don't let the fact that people are better than you at things intimidate you.  Don't even waste time thinking about it.  You put your best into the hours you got in the clock, learn and work and rest at your own pace, seek support even before you think you need it, find a few things you care about, and do them really well with your whole heart.  I think you'll find along the way your very own sense of accomplishment and joy.</p>
+
+        <p>Love you Mudge fam!  This year I'm already so proud of the people you are and the people I'm sure you'll become. </p>
+
+        <p>Mudge Love,</p>
+
+        <p>Erik (Community Advisor, Mudge House)</p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="entry-footer" ng-include="'footer.html'"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/lib/jquery-2.1.4.min.js"></script>
+  <!--<script src="js/lib/jquery-ui.min.js"></script>-->
+  <script src="js/lib/angular-1.4.6.min.js"></script>
+  <script src="js/blog-map.js"></script>
+  <script src="js/blog-entry.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47730913-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>

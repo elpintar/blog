@@ -1,0 +1,83 @@
+<!-- Erik Pintar, February 2016 -->
+
+<hr></hr>
+
+<div id="prev-blog-container">
+  <a ng-href="./{{prevBlogId}}.html">
+    <div ng-if="prevBlog != null" id="prev-blog" class="nav-entry">
+      <div class="arrow-container">
+        <i class="fa fa-angle-left fa-3x"></i>
+      </div>
+      <div class="nav-info">
+        <div class="nav-desc">
+          Newer Post
+        </div>
+        <div class="nav-title">
+          {{prevBlog.title}}
+        </div>
+        <!-- <div class="nav-date">
+          {{makeNumberDate(prevBlog.date)}}
+        </div> -->
+      </div>
+    </div>
+  </a>
+
+</div><div id="toc-btn-container">
+  <a ng-href="./index.html" id="toc-btn">
+    <i class="fa fa-align-justify fa-1x"></i>
+    <span>Table of Contents</span>
+  </a>
+
+</div><div id="next-blog-container">
+  <a ng-href="./{{nextBlogId}}.html">
+    <div ng-if="nextBlog != null" id="next-blog" class="nav-entry">
+      <div class="nav-info">
+        <div class="nav-desc">
+          Older Post
+        </div>
+        <div class="nav-title">
+          {{nextBlog.title}}
+        </div>
+        <!-- <div class="nav-date">
+          {{makeNumberDate(nextBlog.date)}}
+        </div> -->
+      </div>
+      <div class="arrow-container">
+        <i class="fa fa-angle-right fa-3x"></i>
+      </div>
+    </div>
+  </a>
+</div>
+
+<br><br><br>
+<hr>
+
+<div id="blog-post-credits">
+  This post {{verbForPost}} by Erik Pintar, by the grace of God.
+  <br>
+  <span ng-if="editors && editors.length > 0">
+    Editing help from: {{editors.join(', ')}}
+  </span>
+</div>
+
+<br>
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//erikpintar.us13.list-manage.com/subscribe/post?u=a6acb3398cd2f9a2f0074b889&amp;id=032fed1ae7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe for updates!</h2>
+      <div class="mc-field-group">
+        <input type="email" placeholder="email address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a6acb3398cd2f9a2f0074b889_032fed1ae7" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+  </form>
+</div>
+
+<!--End mc_embed_signup-->

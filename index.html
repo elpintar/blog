@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html ng-app="epBlog">
+
+<!-- Erik Pintar, January 2016 -->
+
+<head>
+  <title>Erik Pintar's Blog</title>
+
+  <!-- META TAGS -->
+  <meta property="og:url" content="http://blog.erikpintar.com" />
+  <meta property="og:title" content="Erik Pintar's Blog" />
+  <meta property="og:description" content="A chronicle of poetry, prose, and media in a life journey of discovering God." />
+  <meta property="og:image" content="http://blog.erikpintar.com/EP-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="./css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/lib/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/lib/opensans.css">
+  <link rel="stylesheet" type="text/css" href="./css/utils.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/blog.css">
+
+  <!-- SCRIPTS AT BOTTOM -->
+
+</head>
+
+<body ng-controller="BlogController">
+  
+  <div id="top-bar">
+    <a id="blog-main-site-link" href="http://erikpintar.com">erikpintar.com
+    </a>
+    <h1 id="blog-header"><a href="javascript:window.location.href = './index.html';">Erik Pintar's Blog</a></h1>
+    <a id="blog-about-link" href="./about.html">About This Blog</a>
+  </div>
+  
+  <div id="home-page-top-space"></div>
+
+  <h1 id="blog-title">Table of Contents</h1>
+
+  <div id="mobile-blog-about-link">
+    <a href="./about.html">About This Blog</a>
+  </div>
+
+
+  <!-- Begin MailChimp Signup Form -->
+  
+  <div id="mc_embed_signup-home-page">
+    <form action="//erikpintar.us13.list-manage.com/subscribe/post?u=a6acb3398cd2f9a2f0074b889&amp;id=032fed1ae7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+        <h2 id="mc_embed_signup_prompt">Subscribe for updates!</h2>
+        <div class="mc-field-group">
+          <input type="email" placeholder="email address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a6acb3398cd2f9a2f0074b889_032fed1ae7" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
+    </form>
+  </div>
+
+  <!--End mc_embed_signup-->
+
+
+  <!-- <div id="filters-container">
+    <span class="filter">
+      <span class="tag-name"
+            ng-click="selectAllTags()"
+            ng-class="{'selected': allTagsSelected()}">
+        all</span>
+    </span>
+    <span ng-repeat="tag in tags" class="filter">
+      <span class="tag-name"
+            ng-click="selectOnlyTag(tag)"
+            ng-class="{'selected': onlySelectedTag(tag)}">
+        {{tag}}</span>
+    </span>
+  </div> -->
+
+
+  <div id="toc-container">
+    <ol id="blog-toc" class="leaders">
+      <li ng-repeat="blog in blogs" ng-if="doShowEntry(blog)" class="entry-line">
+        <a ng-href="./{{blog.blogId}}.html" class="entry-link">
+          <span class="toc-entry-title">{{blog.title}}</span>
+          <span class="toc-entry-date">{{makeNumberDate(blog.date)}}</span>
+        </a>
+      </li>
+    </ol>
+  </div>
+
+  <div id="mobile-blog-main-site-link">
+    <center>
+      <a href="http://erikpintar.com">Back To erikpintar.com</a>
+    </center>
+  </div>
+
+  <div id="bottom-padding"></div>
+
+  <!-- SCRIPTS -->
+  <script src="./js/lib/jquery-2.1.4.min.js"></script>
+  <script src="./js/lib/angular-1.4.6.min.js"></script>
+  <script src="./js/blog-map.js"></script>
+  <script src="./js/blog.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47730913-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>

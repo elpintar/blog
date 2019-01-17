@@ -1,0 +1,288 @@
+.center-children, .article {
+  text-align: center; }
+
+.half-page-pad {
+  height: 50vh;
+  width: 100%; }
+
+.quarter-page-pad {
+  height: 25vh;
+  width: 100%; }
+
+/* Float */
+.hvr-float, .circ-btns-row .circ-btn-container, .sq-btn-container, button.rect-btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-float:hover, .circ-btns-row .circ-btn-container:hover, .sq-btn-container:hover, button.rect-btn:hover, .hvr-float:focus, .circ-btns-row .circ-btn-container:focus, .sq-btn-container:focus, button.rect-btn:focus, .hvr-float:active, .circ-btns-row .circ-btn-container:active, .sq-btn-container:active, button.rect-btn:active {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px); }
+
+body {
+  font-family: 'open_sanslight', sans-serif;
+  font-size: 16px;
+  font-weight: lighter; }
+
+h1#site-title {
+  font-size: 3.75em;
+  margin-top: 25vh;
+  letter-spacing: 12px; }
+  h1#site-title:hover {
+    cursor: pointer; }
+
+h2.circ-btn-label {
+  font-size: 1.5em; }
+
+h3.article-title {
+  font-size: 2em; }
+
+button {
+  border: 5px solid black;
+  padding: 0; }
+
+button:focus {
+  outline: none; }
+
+.circ-btns-row {
+  margin-top: 0; }
+
+.circ-btn-container {
+  display: inline-block;
+  margin: 10vh 3.75em; }
+  .circ-btn-container:hover {
+    cursor: pointer; }
+
+button.circ-btn {
+  border-radius: 50%;
+  margin: 1em;
+  width: 8em;
+  height: 8em;
+  background-color: white; }
+  button.circ-btn:hover {
+    cursor: pointer; }
+
+.person-icon {
+  background-image: url("../img/icons/personicon.svg");
+  background-size: contain; }
+
+.sq-btn-container {
+  display: inline-block;
+  margin: 0em 1.5em;
+  width: 15em;
+  height: 15em; }
+  .sq-btn-container:hover {
+    cursor: pointer; }
+
+button.sq-btn {
+  border-radius: 5px;
+  margin: 0.75em;
+  width: 12em;
+  height: 12em;
+  background-color: white; }
+  button.sq-btn:hover {
+    cursor: pointer; }
+
+.sq-btn img {
+  width: 100%; }
+
+.rect-btn-group {
+  margin: 1.5em 0; }
+
+.rect-btn-container {
+  display: inline-block;
+  margin: 0 1.5em; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15em; }
+
+button.rect-btn {
+  border-radius: 5px;
+  margin: 0.75em;
+  padding: 0.75em 1.5em;
+  background-color: white;
+  font-size: 0.7em; }
+  button.rect-btn:hover {
+    cursor: pointer; }
+
+.circ-btn-col {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  padding-top: 2em; }
+  .circ-btn-col#left-col {
+    left: 0; }
+    .circ-btn-col#left-col .circ-btn-container .circ-btn-label {
+      position: relative;
+      -webkit-transition: left, 0.2s, ease-in-out;
+      -moz-transition: left, 0.2s, ease-in-out;
+      -ms-transition: left, 0.2s, ease-in-out;
+      -o-transition: left, 0.2s, ease-in-out;
+      transition: left, 0.2s, ease-in-out;
+      left: -15px; }
+    .circ-btn-col#left-col .circ-btn-container:hover .circ-btn-label {
+      -webkit-transition: left, 0.2s, ease-in-out;
+      -moz-transition: left, 0.2s, ease-in-out;
+      -ms-transition: left, 0.2s, ease-in-out;
+      -o-transition: left, 0.2s, ease-in-out;
+      transition: left, 0.2s, ease-in-out;
+      left: 0px;
+      z-index: 10; }
+  .circ-btn-col#right-col {
+    right: 0;
+    text-align: right; }
+    .circ-btn-col#right-col .circ-btn-container .circ-btn-label {
+      position: relative;
+      -webkit-transition: right, 0.2s, ease-in-out;
+      -moz-transition: right, 0.2s, ease-in-out;
+      -ms-transition: right, 0.2s, ease-in-out;
+      -o-transition: right, 0.2s, ease-in-out;
+      transition: right, 0.2s, ease-in-out;
+      right: -15px; }
+    .circ-btn-col#right-col .circ-btn-container:hover .circ-btn-label {
+      -webkit-transition: right, 0.2s, ease-in-out;
+      -moz-transition: right, 0.2s, ease-in-out;
+      -ms-transition: right, 0.2s, ease-in-out;
+      -o-transition: right, 0.2s, ease-in-out;
+      transition: right, 0.2s, ease-in-out;
+      right: 0px;
+      z-index: 100; }
+  .circ-btn-col .circ-btn-container {
+    display: block;
+    margin: 1em;
+    -webkit-transition: opacity, 0.5s, ease-in-out;
+    -moz-transition: opacity, 0.5s, ease-in-out;
+    -ms-transition: opacity, 0.5s, ease-in-out;
+    -o-transition: opacity, 0.5s, ease-in-out;
+    transition: opacity, 0.5s, ease-in-out;
+    opacity: 0.5;
+    /* fade in/out */ }
+    .circ-btn-col .circ-btn-container:hover {
+      -webkit-transition: opacity, 0.2s, ease-in-out;
+      -moz-transition: opacity, 0.2s, ease-in-out;
+      -ms-transition: opacity, 0.2s, ease-in-out;
+      -o-transition: opacity, 0.2s, ease-in-out;
+      transition: opacity, 0.2s, ease-in-out;
+      opacity: 1.0; }
+    .circ-btn-col .circ-btn-container .circ-btn-label {
+      display: inline-block;
+      box-shadow: 0px 0px 5px 5px white;
+      background-color: white;
+      -webkit-transition: opacity, 0.2s, ease-in-out;
+      -moz-transition: opacity, 0.2s, ease-in-out;
+      -ms-transition: opacity, 0.2s, ease-in-out;
+      -o-transition: opacity, 0.2s, ease-in-out;
+      transition: opacity, 0.2s, ease-in-out;
+      opacity: 0.0;
+      top: -0.3em; }
+      .circ-btn-col .circ-btn-container .circ-btn-label.custom-icon {
+        top: -1.35em; }
+    .circ-btn-col .circ-btn-container:hover .circ-btn-label {
+      -webkit-transition: opacity, 0.2s, ease-in-out;
+      -moz-transition: opacity, 0.2s, ease-in-out;
+      -ms-transition: opacity, 0.2s, ease-in-out;
+      -o-transition: opacity, 0.2s, ease-in-out;
+      transition: opacity, 0.2s, ease-in-out;
+      opacity: 1.0; }
+    .circ-btn-col .circ-btn-container .circ-btn {
+      margin-left: 1.5em;
+      margin-right: 1.5em; }
+    .circ-btn-col .circ-btn-container .larger-circ-btn {
+      width: 9em;
+      height: 9em;
+      margin-left: 1em;
+      margin-right: 1em; }
+    .circ-btn-col .circ-btn-container.fade-hidden {
+      opacity: 0.0; }
+
+#top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 5px white;
+  z-index: 1; }
+  #top-bar.fade-shown {
+    -webkit-transition: opacity, 4s, ease, 1s;
+    -moz-transition: opacity, 4s, ease, 1s;
+    -ms-transition: opacity, 4s, ease, 1s;
+    -o-transition: opacity, 4s, ease, 1s;
+    transition: opacity, 4s, ease, 1s;
+    opacity: 0.95; }
+  #top-bar.fade-hidden {
+    -webkit-transition: opacity, 4s, ease, 1s;
+    -moz-transition: opacity, 4s, ease, 1s;
+    -ms-transition: opacity, 4s, ease, 1s;
+    -o-transition: opacity, 4s, ease, 1s;
+    transition: opacity, 4s, ease, 1s;
+    opacity: 0; }
+
+h1#site-header {
+  font-size: 1.7em;
+  margin: 0.5em 1em;
+  letter-spacing: 5px;
+  text-align: center; }
+  h1#site-header:hover {
+    cursor: n-resize; }
+
+.article-selection {
+  margin: 0 150px;
+  padding-top: 2em; }
+
+.article {
+  margin: 0 150px; }
+
+h3.article-title {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  padding-top: 1em; }
+
+.featured-container {
+  max-width: 100%;
+  max-height: 67vh;
+  margin-bottom: 1em; }
+
+.featured-img {
+  min-width: 100%;
+  min-height: 67vh;
+  margin-bottom: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#raposters .featured-img {
+  width: auto;
+  height: 67vh; }
+
+.article-text {
+  font-size: 1em;
+  text-align: left;
+  padding: 2em 15%; }
+  .article-text p {
+    margin-bottom: 1em;
+    line-height: 2em; }
+
+#aboutme-container {
+  margin-top: 0vh;
+  margin-bottom: 20vh; }
+  #aboutme-container a {
+    text-decoration: underline;
+    color: #777;
+    font-size: 1.3em; }
+    #aboutme-container a:hover {
+      cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */
