@@ -22,11 +22,6 @@ var blogMap = {
     date: new Date("January 19, 2014"),
     tags: ["art"],
   },
-  'embers': {
-    title: 'Embers: Sign Language Music Video',
-    date: new Date("July 25, 2014"),
-    tags: ["art"],
-  },
   'god-of-angel-armies': {
     title: 'God of Angel Armies: Sign Language Music Video',
     date: new Date("April 20, 2014"),
@@ -66,6 +61,11 @@ var blogMap = {
     date: new Date("4/7/2017"),
     tags: ["stories", "prose"],
     editors: ["Angela Pintar", "Chris Hsu", "Rachel Poole"],
+  },
+  '12-reasons-why': {
+    title: '12 Reasons Why I Am Grateful To Have Become Catholic',
+    date: new Date("1/21/2018"),
+    tags: ["prose"],
   },
 }
 
