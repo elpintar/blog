@@ -274,7 +274,7 @@ h2.sub-heading {
     line-height: 1.5em;
     &.close-in {
       margin: 0 0 0.75em 0;
-      &.quote-text {
+      &.quote-text, &.alt-quote-text {
         padding-left: 2.25em;
       }
     }
@@ -625,6 +625,14 @@ p.caption {
     }
     p.caption {
       font-size: 1em;
+    }
+    .small_font,
+    .small-font {
+      &.close-in {
+        &.alt-quote-text {
+          padding: 12px 77px 0px 77px;
+        }
+      }
     }
   }
 
