@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html ng-app="epBlog">
+
+<head>
+  <title>Journey To The Sabbath</title>
+  <meta property="og:title" content="Journey To The Sabbath"/>
+  <meta property="og:description" content="As my seventeenth year of school began, the amazing experience of getting to know God like a friend in prayer the previous summer was beginning to seem like a once and gone dream that wasn't possible in the realities of daily life. A few months after that prayer for deeper devotion from a place of overwhelming busyness, I was a changed man. A restful man."/>
+  <meta property="og:image" content="https://storage.googleapis.com/blog.erikpintar.com/imgs/jerusalem.jpg"/>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="css/lib/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/opensans.css">
+  <link rel="stylesheet" type="text/css" href="css/utils.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+
+  <!-- SCRIPTS AT BOTTOM -->
+
+</head>
+
+<body ng-controller="BlogEntryController">
+
+  <h1 id="blog-header"><a href="javascript:window.location.href = './index.html';">Erik Pintar's Blog</a></h1>
+
+  <div class="blog-entry">
+    <h1 class="entry-title">Journey To The Sabbath</h1>
+    <h2 ng-if="curBlog.subtitle" class="entry-subtitle">How I Got To Know God Like A Friend: Part Three</h2>
+    <h3 class="entry-date">January 21, 2017</h3>
+
+    <div class="center-children">
+
+      <div ng-show="pageNum == 0" class="prose-container">
+
+        <h2>Captivity in Busyness</h2>
+
+        <p>As my seventeenth year of school began (that is, junior year of college), the amazing experience of <a href="./got-to-know-god-pt-2.html">getting to know God like a friend in prayer</a> the previous summer was beginning to seem like a once and gone dream that wasn't possible in the realities of daily life. </p>
+
+        <p>From my journal, October 2013:</p>
+
+        <p class="quote-text">I want to fall into his arms and give him my whole being, but at the same time I'm having to keep just living life and fulfill commitments and be in the moment.</p>
+
+        <p>I was beginning to feel I was a slave to my schedule and a captive of my commitments. The things I cared most about (God and people) kept getting relegated to second place to things I cared about less (homework and a boatload of scheduled activities). </p>
+
+        <p class="quote-text">I miss the energy of [summer camp], and remembering it I console myself by saying that it won't happen all the time, which is true, but that's no excuse to disbelieve that God can do "immeasurably more than I can ask for or imagine".</p>
+
+        <p class="quote-text">And I've been being tempted, and giving in. And feeling guilty. And snoozing again and again and not setting aside time for God alone.  And putting it off, only to overwrite it with another menial task later...[I want to] sacrifice moments for Him...basically I've just kept telling myself: Devotion.  What does that look like?</p>
+
+        <p>I think God was listening when I wrote that journal.</p>
+
+        <p>Over Thanksgiving break less than two months later, I get a phone call:</p>
+
+        <p>"Hi Erik, are you still available to join us on a trip to Israel?"
+        <p>Little did I know, that trip would provide the answer to that prayer.</p>
+
+        <hr>
+
+        <p class="quote-looking">"Once you [as a demon] have made the World an end, and faith a means, you have almost won your man, and it makes very little difference what kind of worldly end he is pursuing. Provided that meetings, pamphlets, policies, movements, causes, and crusades, matter more to him than prayers and sacraments and charity, he is ours..."</p>
+
+        <p class="small-font">C. S. Lewis, The Screwtape Letters</p>
+
+        <hr>
+
+        <h2>Holy Spaces vs. Holy Time</h2>
+
+        <p>What I took back with me from Israel wasn't so much the experiences of having been in <a href="./jerusalem.html">holy spaces</a>, but the experience of having been in a holy time.</p>
+
+        <p>So even more than being in the spots where Jesus as God in the flesh walked the earth...I experienced a time unexpectedly powerful: entering the Sabbath.</p>
+
+        <p>I tend to shun and look down upon tradition: candle-lighting, hand-washing, bread-blessing, prayer-reciting, food-restricting...but I was curiously surprised at how this tradition lured me.</p>
+
+        <p>I saw a modern city where the whole city respected, at least acknowledged, the Sabbath.  It was extreme, to be sure - not doing any work or using any technology for a full day every week?  Practically all the businesses closed?  How could their society function?  My Jewish roommate didn't even use light switches on the Sabbath!</p>
+
+        <p>And at first, I looked down on this as a bunch of arbitrary rules.  I thought to myself "at least Christianity doesn't have silly arbitrary rules like this!" and "good thing Jesus freed us from the Sabbath!"</p>
+
+        <p>But then, during the trip, I was brought into the living world of the Jewish Sabbath (Shabbat): a special Shabbat Friday evening meal in festive and peaceful community fellowship with blessings, bread and wine, saying "Shabbat Shalom" to everyone, hearing the Scriptures read in the synagogue, and singing traditional songs in the separation ceremony Saturday sundown at Shabbat's end, as soon as three stars were visible in the sky.</p>
+
+        <p>And I began to question - "Why don't Christians celebrate the Sabbath?  This is a beautiful thing!"  And as silly as I thought all the restrictions were, I realized that underneath, I longed for that kind of rest in my life - freedom from the constant stream of work, meetings, to-do list items, errands and responsibilities in my life.</p>
+
+        <p>And the Sabbath rules I had looked down upon at the start began a course of personal inquiry that would forever change the way I looked at the Sabbath.</p>
+
+        <hr>
+
+        <p class="quote-looking">The meaning of the Sabbath is to celebrate time rather than space. Six days a week we live under the tyranny of things of space; on the Sabbath we try to become attuned to holiness in time.</p>
+
+        <p class="quote-looking">For where shall the likeness of God be found? There is no quality that space has in common with the essence of God. There is not enough freedom on the top of the mountain; there is not enough glory in the silence of the sea. Yet the likeness of God can be found in time, which is eternity in disguise.</p>
+
+        <p class="quote-looking">It is a day on which we are called upon to share in what is eternal in time, to turn from the results of creation to the mystery of creation; from the world of creation to the creation of the world.</p>
+
+        <p class="small-font">Abraham Joshua Heschel, The Sabbath</p>
+
+        <hr>
+
+        <!-- <div class="page-turn">
+            <span ng-click="goToNextPage()" class="next-prev-page">
+                Next Page
+                <span class="fa fa-angle-right fa-1x"></span>
+            </span>
+        </div>
+
+    </div>
+
+    <div ng-show="pageNum == 1" class="prose-container">
+
+        <div class="page-turn">
+            <span ng-click="goToPrevPage()" class="next-prev-page">
+                <span class="fa fa-angle-left fa-1x"></span>
+                Prev Page
+            </span>
+        </div> -->
+
+        <h2>Prompted to Investigate</h2>
+
+        <p>When I got back from Israel, the Sabbath kept coming up in my daily bible reading in such a way that I felt God nudging me to begin to investigate the question further - "Is the Sabbath still something that Christians should do?  That I should do?"</p>
+
+        <p>One of the first passages was me rediscovering what was right there in the Ten Commandments:</p>
+
+        <p class="quote-text">Remember the Sabbath day, to keep it holy.
+        <br>Six days you shall labor, and do all your work, 
+        <br>but the seventh day is a Sabbath to the Lord your God. 
+        <br>On it you shall not do any work...
+        <br>
+            <span class="small-font">Exodus 20:8-10</span>
+        </p>
+
+        <p>And I realized most Christians I had met held <b>all</b> the other Ten Commandments (no other Gods before me, honor your parents, no murder, etc.) to be moral precepts that apply to the very fundamental principles of relationships between God and people, and people with people. Except we always seemed to pass over <b>this</b> commandment of keeping the Sabbath holy.</p>
+
+        <p>But I thought maybe Jesus got rid of the Sabbath?  He broke it, right?  Well - I took a closer look at those passages.  Note Jesus's responses to righteous Jewish Pharisees when they were upset that Jesus and his disciples seemed to deviate from the strict rules of the Jewish Sabbath:</p>
+
+        <p class="quote-text">The Sabbath was made for man, not man for the Sabbath. So the Son of Man is lord even of the Sabbath.
+        <br>
+            <span class="small-font">Mark 2:27</span>
+        </p>
+
+        <p>Jesus does not reject the Sabbath, but says the Sabbath was made for man!  Just as beautiful mountains and delicious food and the covenant of marriage were made for man - here is a hint that the Sabbath, too, is a wonderful thing that God has made for the benefit and enjoyment of his people.</p>
+
+        <p class="quote-text">Which one of you who has a sheep, if it falls into a pit on the Sabbath, will not take hold of it and lift it out? Of how much more value is a man than a sheep! So it is lawful to do good on the Sabbath.
+        <br>
+            <span class="small-font">Matthew 12:11-12</span>
+        </p>
+
+        <p>In all that Jesus said about the Sabbath, I noticed that he doesn't do away with it, but rather corrects and expands the understanding of what it means to "keep it holy", claims lordship over it, and ensures that we recognize men, women, and doing good are all worth much more than the rules, traditions and customs God has gifted us with.</p>
+
+        <p>So, I thought, were these rules of the Sabbath "made for man" just like the Laws of the Old Testament that we don't observe as Christians anymore?  No - the more I looked at scripture, the more fundamental the concept of the Sabbath seemed to be, from the very beginning of Creation:</p>
+
+        <p class="quote-text">And on the seventh day God finished his work that he had done, and he rested on the seventh day from all his work that he had done. So God blessed the seventh day and made it holy, because on it God rested from all his work that he had done in creation.
+        <br>
+            <span class="small-font">Genesis 2:2-3</span>
+        </p>
+
+        <p>And indeed, why else, I thought, would God (who doesn't need physical rest) have done this strange act of resting for a day after creating the heavens and earth, if he wasn't setting an example for all time?</p>
+
+        <p>Right after God creates humanity, he creates the Sabbath.  I imagine God, in his closeness to Adam, teaching him how to keep that seventh day holy.  For in fact, when giving the commandments to Moses, God says "remember the Sabbath" as if it had already existed - likely passed down as a practice through all the generations since Adam!</p>
+
+        <p>Sabbath rest was beginning to appear to me as something that we were made for.  For all humans, at all points of history - something tied to the way that we are, that every seventh day, it is good for us to rest and enjoy what has been made and be to re-centered in God, our Creator.</p>
+
+        <p>And thus, through the light of Scripture, my eyes began to be opened to the beauty of the Sabbath.</p>
+
+        <hr>
+
+        <p class="quote-looking">On the Sabbath we live, as it were, independent of technical civilization: we abstain primarily from any activity that aims at remaking or reshaping the things of space. Man's royal privilege to conquer nature is suspended on the seventh day.</p>
+
+        <p class="quote-looking">In technical civilization, we expend time to gain space. To enhance our power in the world of space is our main objective. Yet to have more does not mean to be more. The power we attain in the world of space terminates abruptly at the borderline of time.</p>
+
+        <p class="quote-looking">But time is the heart of existence.</p>
+
+        <p class="quote-looking">The solution of mankind's most vexing problem will not be found in renouncing technical civilization, but in attaining some degree of independence of it. </p>
+
+        <p class="quote-looking">There is a realm of time where the goal is not to have but to be, not to own but to give, not to control but to share, not to subdue but to be in accord.</p>
+
+        <p class="small-font">Abraham Joshua Heschel, The Sabbath</p>
+
+        <hr>
+
+        <h2>Rules That Free</h2>
+
+        <p>Now it was time for action.  Confronted with both the beauty and the biblical basis for the Sabbath, I decided to try keeping it.  Soon after the trip I came up with four rules for my practice of the Sabbath. After realizing a full day would be dramatically challenging and likely lead to me dropping the Sabbath altogether, I settled on the following set of rules for my "mini-Sabbath":</p>
+
+        <ol>
+          <li>My mini-Sabbath will be the first six hours after I wake up on Sunday.</li>
+          <li>The time is primarily for God and for Other People.  However, if the primary goal of an activity with others is entertainment, then the socialization is not worth it.</li>
+          <li>No homework.  No email.  No Facebook/app perusal.  No unnecessary stressors.  These may be allowed if it is for the purpose of God or Others (e.g. inviting someone to church).</li>
+          <li>The six hours will include at least one hour of meditation/prayer, me alone with God.</li>
+        </ol>
+
+        <p>And in my junior spring semester of college - to date, my absolute most busy set of three months of my entire life, I was sure put to the test. </p>
+
+        <p>It was one class - 'Introduction to Computer Architecture' - the hardest class I ever took, with homework assignments that took over 20 hours to complete and due...Sunday nights.</p>
+
+        <p>It was a test of trust every due date.  Do I trust that all the time I give to God he'll be faithful with?  I trusted this in my head, but when it came to my schedule...it was hard.  So hard.</p>
+
+        <p>But I kept my mini-Sabbath holy and set apart, and God was faithful with it.  Two or three times I finished the assignment within <i>ten minutes</i> of the deadline.  To me, this was miraculous confirmation in my mini-Sabbath discipline and that I was slowly being freed from my slavery to schedules, commitments and deadlines.</p>
+
+        <p>And what a freedom it was.</p>
+
+        <hr>
+
+        <p class="quote-looking">All week we may ponder and worry whether we are rich or poor, whether we succeed or fail in our occupations; whether we accomplish or fall short of reaching our goals. But who could feel distressed when gazing at spectral glimpses of eternity, except to feel startled at the vanity of being so distressed?</p>
+
+        <p class="quote-looking">Is it possible for a human being to do all his work in six days? Does not our work always remain incomplete? What the verse means to convey is: Rest on the Sabbath as if all your work were done.</p>
+
+        <p class="quote-looking">It is one thing to race or be driven by the vicissitudes that menace life, and another thing to stand still and to embrace the presence of an eternal moment.</p>
+
+        <p class="quote-looking">The seventh day is the exodus from tension, the liberation of man from his own muddiness, the installation of man as a sovereign in the world of time.</p>
+
+        <p class="small-font">Abraham Joshua Heschel, The Sabbath</p>
+
+        <hr>
+
+        <!-- <div class="page-turn">
+            <span ng-click="goToNextPage()" class="next-prev-page">
+                Next Page
+                <span class="fa fa-angle-right fa-1x"></span>
+            </span>
+        </div>
+
+    </div>
+
+    <div ng-show="pageNum == 2" class="prose-container">
+
+        <div class="page-turn">
+            <span ng-click="goToPrevPage()" class="next-prev-page">
+                <span class="fa fa-angle-left fa-1x"></span>
+                Prev Page
+            </span>
+        </div> -->
+
+        <h2>The Neverending Discovery of a Day</h2>
+
+        <p>So what did I actually do during these mini-Sabbaths?</p>
+
+        <p>I went to church, not thinking about homework, but able to be present with the worship, message, and fellow Church family.  Instead of rushing back to do work, I looked for any opportunity to get lunch with others, which often turned into beautiful fellowship with Church family and deeply profound encouragements. Then I usually wandered through the giant nearby park, singing praise to God, reading scriptures, lifting up prayers, soaking in the beauty of nature, and reflecting deeply on my life or my week, thanking God with gratitude for all that I had past and presently been given.</p>
+
+        <p>I realized then why the Jewish Shabbat has a separation ceremony. My mini-Sabbaths were filled with moments that were hard to leave.</p>
+
+        <p>What at first was a scary "extra commitment" became a thrill I looked forward to every week.  And it made my work more purposeful, because no matter how my week went, I <i>knew</i> rest was coming.</p>
+
+        <p>And if anyone asked me to make plans that might fall in those six hours, I simply said no, I can't do those times, unapologetically. It was fantastically freeing, prioritizing my Sabbath time like this.</p>
+
+        <p>In the midst of the busiest of weeks, the most distracted of seasons, I <i>knew</i> I could never stray for at least more than six days from those things that matter most to me: God and people. And often the Sabbath re-centered me in such a way that the other six days of the week I was more in tune with the very heart of my purpose for living.</p>
+
+        <p>A few months after that prayer for deeper devotion from a place of overwhelming busyness, I was a changed man. A restful man.</p>
+
+        <p>From my journal, April 27, 2014:</p>
+
+        <p class="quote-text">I walked to Schenley thinking of how much God keeps blessing me on these sabbaths and how incredible they are.</p>
+
+        <p class="quote-text">And now I fight the demons of stressing about my [current] project and all the little details and big coding things that need to happen in the less than two weeks left of school. And I know that God is above it all and I give him this time and thanks and hard work and set-aside rest just to embrace his love and mercy and blessing below this tree in Schenley Park.</p>
+
+        <p>Through this new adoption of the Sabbath, I was once again entering a new and deeper chapter of the progression of me drawing nearer to God, and miraculously even in this most busy of times!</p>
+
+        <p>It was another incredible and powerful and unexpected step in my story of getting to know God like a friend.</p>
+
+        <p>In the power of a Day, a Time, a Sabbath set apart for Him.</p>
+
+        <hr>
+
+        <p class="quote-looking">The custom of the "weekend" has become more widespread... Unfortunately, when Sunday loses its fundamental meaning and becomes merely part of a "weekend", it can happen that people stay locked within a horizon so limited that they can no longer see "the heavens".</p>
+
+        <p class="quote-looking">Hence, though ready to celebrate, they are really incapable of doing so.</p>
+
+        <p class="quote-looking">The rediscovery of this day is a grace which we must implore, not only so that we may live the demands of faith to the full, but also so that we may respond concretely to the deepest human yearnings.</p>
+
+        <p class="small-font">Pope John Paul II, Apostolic Letter Dies Domini (The Lord's Day)</p>
+
+        <hr>
+
+        <h2>Gates Open to the Sanctuary in Time</h2>
+
+        <p>To be clear, I don't see the Sabbath as a <i>requirement</i> for Christians.  For Paul writes,</p>
+
+        <p class="quote-text">Therefore let no one pass judgment on you in questions of food and drink, or with regard to a festival or a new moon or a Sabbath. These are a shadow of the things to come, but the substance belongs to Christ.
+        <br>
+            <span class="small-font">Colossians 2:16-17</span>
+        </p>
+
+        <p>The substance belongs to Christ.  And the substance of all the beautiful Sabbaths in my life have proved to be wholly wonderful and life-giving to me.</p>
+
+        <p class="quote-text">One person esteems one day as better than another, while another esteems all days alike. Each one should be fully convinced in his own mind. The one who observes the day, observes it in honor of the Lord.
+        <br>
+            <span class="small-font">Romans 14:5-6</span>
+        </p>
+
+        <p>And these Days that I have observed have only deepened my relationship with God, to the point that in preparing for this post I entered into a full-day Sabbath, every Saturday sundown to Sunday sundown, and it is only becoming more beautiful and life-giving.</p>
+
+        <p>I offer all this - my story leading me to the Sabbath and my thoughts on the Sabbath - not to bring you a burdensome commandment or to boast of righteousness in keeping it, but to celebrate what this day has meant to me and to honor the Lord in sharing its potential for rich fruitfulness in the lives of others.</p>
+
+        <p>And it sure doesn't take a trip to Israel to find this "sanctuary in time"!  I pray you may also discover the rich meaning of "Shabbat Shalom".</p>
+
+        <hr>
+
+        <p class="quote-looking">The words: "On the seventh day God finished His work" (Genesis 2: 2), seem to be a puzzle. Is it not said: "He rested on the seventh day"? &nbsp;"In six days the Lord made heaven and earth" (Exodus 20: 11)?
+
+        <p class="quote-looking">We would surely expect the Bible to tell us that on the sixth day God finished His work. Obviously, the ancient rabbis concluded, there was an act of creation on the seventh day. Just as heaven and earth were created in six days, <b>menuha</b> was created on the Sabbath.</p>
+
+        <p class="quote-looking">"What was created on the seventh day? Tranquility, serenity, peace and repose."  It is the state in which there is no strife and no fighting, no fear and no distrust.</p>
+
+        <p class="quote-looking">"The Lord is my shepherd, I shall not want, He maketh me to lie down in green pastures; He leadeth me beside the still waters" (the waters of <b>menuhot</b>).</p>
+
+        <p class="quote-looking">In later times menuha became a synonym for the life in the world to come, for eternal life.</p>
+
+        <p class="small-font">Abraham Joshua Heschel, The Sabbath</p>
+        </p>
+
+        <br>
+
+        <p class="quote-looking">So then, there remains a Sabbath rest for the people of God [Note: talking about the life to come], for whoever has entered God's rest has also rested from his works as God did from his.
+
+        <p class="quote-looking">Let us therefore strive to enter that rest...</p>
+
+        <p class="small-font">Hebrews 4:9-11</p>
+
+        <br>
+
+        <p class="quote-looking">Sunday is not only the first day, it is also "the eighth day", set within the sevenfold succession of days in a unique and transcendent position which evokes not only the beginning of time but also its end in "the age to come"...the day without end which will know neither evening nor morning, the imperishable age which will never grow old; Sunday is the ceaseless foretelling of life without end which renews the hope of Christians and encourages them on their way.</p>
+
+        <p class="quote-looking">Saint Augustine [describes] the Eschaton [the final event in the divine plan; the end of the world] as "the peace of quietness, the peace of the Sabbath, a peace with no evening".</p>
+
+        <p class="small-font">Pope John Paul II, Apostolic Letter Dies Domini (The Lord's Day)</p>
+
+        <hr>
+
+        <h2>Filled Time</h2>
+
+        <p>The <i>most</i> important lesson in this story I relate to you is that getting to know God and enjoy God while in the midst of a busy culture, an overwhelming set of responsibilities, and a suffocating schedule...it is possible!</p>
+
+        <p>For time is given to us by God.  And the Sabbath is given to us by God, as a foretaste of the eternal Sabbath rest to come.  It is up to us to enter into that rest, simultaneously resting both in the saving rest of Christ achieving salvation for us regardless of our weekly works of righteousness and disobedience, and the weekly rest of setting apart time for the Lord outside of our time for work.</p>
+
+        <p>Each Sabbath I breathe again the fresh air of a holy day, set apart in honor of him, and to appreciate what has been done.</p>
+
+        <p>No matter what the week has been, or the troubles that it has brought, He is there, the One who made me.</p>
+
+        <p>And I am filled with peace.</p>
+
+        <br>
+        <br>
+
+      <div>
+
+    </div>
+
+  </div>
+
+  <div id="entry-footer" ng-include="'footer.html'"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/lib/jquery-2.1.4.min.js"></script>
+  <script src="js/lib/jquery-ui.min.js"></script>
+  <script src="js/lib/angular-1.4.6.min.js"></script>
+  <script src="js/blog-map.js"></script>
+  <script src="js/blog-entry.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47730913-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>
