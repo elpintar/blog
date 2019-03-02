@@ -64,7 +64,7 @@ var blogMap = {
   },
   '12-reasons-why': {
     title: '12 Reasons Why I Am Grateful To Have Become Catholic',
-    date: new Date("1/21/2018"),
+    date: new Date("1/21/2019"),
     tags: ["prose"],
   },
 }
