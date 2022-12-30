@@ -67,6 +67,12 @@ var blogMap = {
     date: new Date("1/21/2019"),
     tags: ["prose"],
   },
+  'what-does-it-mean-to-grow-up': {
+    title: "What Does it Mean to Grow Up?",
+    subtitle: "A 'First Lecture' Given at Carnegie Mellon",
+    date: new Date("4/13/2016"),
+    tags: ["prose"],
+  },
 }
 
 var tags = ["prose", "stories", "art"];
